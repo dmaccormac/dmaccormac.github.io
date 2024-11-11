@@ -1,7 +1,8 @@
 ---
+layout: default
 title: Play audio using VBScript and the Windows Media Player ActiveX control
 date: 2024-11-10
-tags: vbscript, activex, audio
+tags: audio activex vbscript
 ---
 You can use VBScript to play audio using the Windows Media Player ActiveX control (WMPlayer.ocx). To do this, you need to instantiate the WMPlayer.OCX ActiveX control, load the media file, and call the play method.
 
