@@ -1,4 +1,5 @@
 ---
+layout: home
 title: Play audio using VBScript and the Windows Media Player ActiveX control
 date: 2024-11-10
 tags: audio activex vbscript
