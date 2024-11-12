@@ -1,6 +1,6 @@
 ---
 title: Shell folder shortcuts
-date: 2024-10-34
+date: 2024-10-31
 tags:
   - shell
   - folder
