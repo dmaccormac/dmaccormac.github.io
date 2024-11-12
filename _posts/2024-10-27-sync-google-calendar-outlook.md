@@ -5,6 +5,7 @@ tags:
   - google
   - outlook
   - calendar
+  - sync
 ---
 
 You can sync your Google Calendar with Outlook, but it requires some additional steps as there's no built-in feature in Outlook to automatically sync Google Calendar. 
@@ -14,7 +15,7 @@ You can see your Google Calendar in Outlook following the steps [here](https://s
 For full two-way sync (where you can add and edit events in either Google Calendar or Outlook), you need to use a third-party tool. Outlook Google Calendar Sync is a free tool that can sync your Google calendar with Outlook. Here's how you can set it up. 
 
 ### Download and install the app
-Downoad Outlook Google Calendar Sync app [here](https://www.outlookgooglecalendarsync.com/)
+Downoad Outlook Google Calendar Sync app [here](https://www.outlookgooglecalendarsync.com/).
 
 ### Configure Google Settings
 Click on the **Settings** tab and then click on the **Google** tab. Enter your Gmail address under the **Connected Account** field and then click on the **Retrieve Calendars** button.
