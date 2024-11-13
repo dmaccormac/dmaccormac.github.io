@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "dark" #"default", "air", "aqua", "contrast", "dark",
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Dan MacCormac"
+title                    : "Home"
 title_separator          : "-"
-subtitle                 : "Computer related ramblings" # site tagline that appears below site title in masthead
+subtitle                 : #"Computer related ramblings" # site tagline that appears below site title in masthead
 name                     : #"Your Name"
 description              : #"An amazing website."
 url                      : "https://dmaccormac.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -114,15 +114,15 @@ analytics:
 
 # Site Author
 author:
-  name             : #"Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #"I am an **amazing** person."
+  name             : "Dan MacCormac"
+  avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Computer related ramblings"
   location         : #"Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:zocn1i8m2@mozmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -134,7 +134,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/dmaccormac"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -319,7 +319,8 @@ defaults:
       type: posts
     values:
       layout: single
-      classes: wide
+      toc: true
+      toc_sticky: true
       author_profile: false
       read_time: true
       comments: # true
