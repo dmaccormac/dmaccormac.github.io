@@ -15,7 +15,7 @@ Download and install the application from [here](https://www.highrez.co.uk/downl
 - Select the default profile
 - Assign simulated keys `Winkey + Tab` to middle mouse button click.
 
-![Assign windows task view to middle click]({{ site.url }}{{ site.baseurl }}/assets/image/2024-10-30-x-mouse-button-control-1.png){: .align-center}
+![TaskView]({{ site.url }}{{ site.baseurl }}/assets/image/2024-10-30-x-mouse-button-control-1.png){: .align-center}
 
 # Set scroll wheel to control volume
 
@@ -25,9 +25,9 @@ Download and install the application from [here](https://www.highrez.co.uk/downl
 - Click and drag the window finder icon to the system tray
 - The window details will auto populate as shown in screenshot
 
-[![Add system tray window profile]({{ site.url }}{{ site.baseurl }}/assets/image/2024-10-30-x-mouse-button-control-2.png)]{: .align-center}
+![SystemTray]({{ site.url }}{{ site.baseurl }}/assets/image/2024-10-30-x-mouse-button-control-2.png)]{: .align-center}
 
 ## Assign volume control buttons
 - Assign mouse buttons middle click, wheel up, wheel down to volume controls.
 
-![Assign media control actions to mouse buttons]({{ site.url }}{{ site.baseurl }}/assets/image/2024-10-30-x-mouse-button-control-3.png){: .align-center}
+![VolumeControl]({{ site.url }}{{ site.baseurl }}/assets/image/2024-10-30-x-mouse-button-control-3.png){: .align-center}
