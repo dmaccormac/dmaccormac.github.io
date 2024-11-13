@@ -8,18 +8,19 @@ tags:
 ---
 X-Mouse Button Control (XMBC) is a free software application for Windows that allows you to customize the buttons on your mouse. You can reassign mouse buttons to different functions, create application-specific profiles, and set up various shortcuts for tasks. 
 
-# Download and Install
+## Download and Install
 Download and install the application from [here](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm).
 
-# Set middle click to open Task view
+## Set middle click to open Task view
 - Select the default profile
 - Assign simulated keys `Winkey + Tab` to middle mouse button click.
 
 ![Set middle click to open Task view]({{ site.url }}{{ site.baseurl }}/assets/images/2024-10-30-x-mouse-button-control-1.png){: .align-center}
 
-# Set scroll wheel to control volume
 
-## Select the system tray
+## Set scroll wheel to control volume
+
+### Select the system tray
 - Add a new profile
 - Choose Specific Window
 - Click and drag the window finder icon to the system tray
@@ -27,7 +28,7 @@ Download and install the application from [here](https://www.highrez.co.uk/downl
 
 ![Select the system tray]({{ site.url }}{{ site.baseurl }}/assets/images/2024-10-30-x-mouse-button-control-2.png){: .align-center}
 
-## Select the system tray
+### Assign volume control actions
 - Assign mouse buttons middle click, wheel up, wheel down to volume controls.
 
 ![Select the system tray]({{ site.url }}{{ site.baseurl }}/assets/images/2024-10-30-x-mouse-button-control-3.png){: .align-center}
