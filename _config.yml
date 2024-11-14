@@ -321,7 +321,7 @@ defaults:
       layout: single
       toc: true
       toc_sticky: true
-      toc_title: "Contents"
+      toc_label: "Contents"
       author_profile: true
       read_time: false
       comments: # true
