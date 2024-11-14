@@ -12,7 +12,7 @@ tags:
 Shell folders provide easy access to various important locations and features in the system such as the desktop, documents, network and system settings. The idea behind Shell Folders is to abstract away the actual underlying file system paths and offer a standardized way for applications and users to access these locations.
 
 
-# # Shell folder shortcuts
+# Shell folder shortcuts
 
 | **Folder** | **Shortcut** |
 | --- | --- |
