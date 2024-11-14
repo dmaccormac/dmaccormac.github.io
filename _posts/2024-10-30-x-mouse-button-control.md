@@ -1,5 +1,5 @@
 ---
-title: Use X-Mouse Button Control to customize your mouse button actions
+title: Use X-Mouse Button Control to customize your mouse buttons
 date: 2024-10-30
 last_modified_at: 2024-11-13
 excerpt:  Reassign mouse buttons to different functions and set up various shortcuts for tasks.
