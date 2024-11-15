@@ -2,7 +2,7 @@
 title: Overview of updates in Monterey Rainmeter v1.0.4
 date: 2024-11-05
 last_modified_at: 2024-11-05
-excerpt:  A new release of the skin with additional monitor widgets and interface updates. Source code available [here](https://github.com/dmaccormac/MontereyRainmeter).
+excerpt:  A new release of the rainmeter skin with additional system monitor widgets and interface updates. 
 tags: 
   - rainmeter
   - customization
@@ -57,6 +57,7 @@ OnChangeAction=[!UpdateMeasure Core0Rounded]
 Add icon images for the new monitors in `@Resources\Images\Monitor`
 
 
+
 # Add IP monitors
 I added two new network monitor items to show public and private IP address. As before, add the drop down entries to `@Resources\Scripts\Contexts\Monitor.inc` and add the supporting functions to `@Resources\Scripts\Widgets\Monitor.inc`.
 
@@ -81,6 +82,7 @@ RegExp=(?s)^(.*)$
 StringIndex=1
 Substitute="":"N/A"
 ```
+
 
 # UI changes
 Made some small changes to UI to accommodate the new widgets.
