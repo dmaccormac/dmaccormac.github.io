@@ -13,7 +13,7 @@ This is an overview of updates in Monterey Rainmeter v1.0.4. I've added some add
 
 Below is a screenshot of the new CPU temperature monitor and network monitor items.
 
-![Monitor widgets](/assets/images/2024-11-05-rainmeter-monterey-1.png){: .align-center}
+![Monitor widgets](/assets/images/2024-11-05-monterey-rainmeter-1.png){: .align-center}
 
 # Add CPU temperature monitors
 Rainmeter supports integration with [Core Temp](https://www.alcpu.com/CoreTemp/) which we need to install first to support CPU temperature monitoring. 
@@ -33,7 +33,7 @@ IfMatch8=Core0
 IfMatchAction8=[!SetOption Rainmeter ContextTitle10 "Core0  [\x2714]"]
 ```
 
-![Add drop down menu items](/assets/images/2024-11-05-rainmeter-monterey-2.png){: .align-center}
+![Add drop down menu items](/assets/images/2024-11-05-monterey-rainmeter-2.png){: .align-center}
 
 ## Add functions for new items
 Edit `@Resources\Scripts\Widgets\Monitor.inc` to add functions for the new items. Copy the existing CPU functions and use them as templates for new functions for each CPU core. Replace all new instances of 'CPU' with core name, for example Core0.
@@ -101,3 +101,7 @@ Adjust other widget output as needed in `Widgets/Monitor` files.
 ## Add custom context menu actions 
 - Add menu item in `@Resources\Scripts\Contexts\Widget.inc`
 - Set menu item text variables in `@Resources\Languages\en\Widget.inc`
+
+# Links
+[GitHub Repo](https://github.com/dmaccormac/MontereyRainmeter)
+[Release - v1.0.4](https://github.com/dmaccormac/MontereyRainmeter/releases/tag/v1.0.4)
