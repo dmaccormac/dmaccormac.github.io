@@ -16,9 +16,9 @@ Below is a screenshot of the new CPU temperature monitor and network monitor ite
 ![Monitor widgets](/assets/images/2024-11-05-monterey-rainmeter-1.png){: .align-center}
 
 # Add CPU temperature monitors
-Rainmeter supports integration with [Core Temp](https://www.alcpu.com/CoreTemp/) which we need to install first to support CPU temperature monitoring. 
+Rainmeter supports integration with [Core Temp](https://www.alcpu.com/CoreTemp/) to provide CPU temperature monitoring data.  
 
-To add the new temperatue monitor widgets, we need to add the new items to the drop down menu and then create new functions for these monitors. 
+To add the new temperatue monitor widgets, we need to add the new items to the drop down menu and then create new functions for these items.
 
 ## Add drop down items
 Edit `@Resources\Scripts\Contexts\Monitor.inc` to add entries for the new items. Add entries for each CPU core under the `[Variables]` and `[SetTickMark]` sections.
@@ -53,6 +53,8 @@ MaxValue=100
 OnChangeAction=[!UpdateMeasure Core0Rounded]
 ```
 
+The Core Temp application must be open in order for the widget to receive temperate data.
+
 ## Update monitor icons
 Add icon images for the new monitors in `@Resources\Images\Monitor`
 
@@ -85,25 +87,34 @@ Substitute="":"N/A"
 
 
 # UI changes
-Made some small changes to UI to accommodate the new widgets.
+I made some small changes to UI to accommodate the new widgets.
 
 ## Widget Output
--  Update `Widgets\Monitor\Large.ini` and edit `[MeterValue5]` and `[MeterValue6]` sections to remove percent character from slots 5 and 6 (to accomodate IP output).
-    `Text=[&[#Meter5]Rounded]`
+- Open `Widgets\Monitor\Large.ini` 
+- Edit `[MeterValue5]` and `[MeterValue6]` sections 
+- Remove percent character from the value of `Text` (to accomodate IP address output).
 
-Adjust other widget output as needed in `Widgets/Monitor` files.
+`Text=[&[#Meter5]Rounded]`
+
+Adjust other widget text output as needed.
 
 ## Refresh on double click
-- Add the following to the widget inc file:
+- Add the following to the widget .ini file:
+  
 `LeftMouseDoubleClickAction=[!Refresh]`
 
-## Fix Settings Display Brightness
+## Fix Settings display
 - Edit `Settings.ini` and set `#BackgroundColor#10` in `[RightHalfMeter]` section.
   
 ## Add custom context menu actions 
 - Add menu item in `@Resources\Scripts\Contexts\Widget.inc`
 - Set menu item text variables in `@Resources\Languages\en\Widget.inc`
 
-# Links
-[GitHub Repo](https://github.com/dmaccormac/MontereyRainmeter)
-[Release - v1.0.4](https://github.com/dmaccormac/MontereyRainmeter/releases/tag/v1.0.4)
+# References
+[[1] GitHub Repo](https://github.com/dmaccormac/MontereyRainmeter)
+
+[[2] Download Monterey_1.0.4.rmskin](https://github.com/dmaccormac/MontereyRainmeter/releases/download/v1.0.4/Monterey_1.0.4.rmskin)
+
+[[3] Core Temp](https://www.alcpu.com/CoreTemp/)
+
+[[4] Rainmeter: CoreTemp plugin](https://docs.rainmeter.net/manual/plugins/coretemp/)
