@@ -7,7 +7,7 @@ tags:
 excerpt: A guide to configuring the necessary tools and plugins and running an example Hello World program.  
 ---
 # Introduction
-Eclipse IDE is a free and open-source integrated development environment. It is primarily used for Java programming, but it also supports other languages like C, C++, Python, and more [1]. To setup Eclipse for C++ development, we need to install the necessary tools and plugins first. This article is a step-by-step guide to setting up C++ in Eclipse.
+Eclipse IDE is a free and open-source integrated development environment. It is primarily used for Java programming, but it also supports other languages like C, C++, Python, and more [1]. To setup Eclipse for C++ development, we need to install the necessary tools and plugins first. This article is a step-by-step guide to setting up Eclipse for C++ development on Windows.
 
 # Setup the C++ compiler
 First, we need to install a C++ compiler for Eclipse to use. GCC (GNU Compiler Collection) is a free and open source C++ compiler. The MinGW-w64 is a version of GCC that is compatible with Microsoft Windows [2]. 
