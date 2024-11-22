@@ -7,14 +7,14 @@ tags:
 excerpt: A guide to configuring the necessary tools and plugins and running an example Hello World program.  
 ---
 # Introduction
-Eclipse IDE is a free and open-source integrated development environment. It primarily used for Java programming, but it also supports other languages like C, C++, Python, and more [1]. It can be used for C++ development, but we need to install the necessary tools and plugins first. This article is a step-by-step guide to setting up C++ in Eclipse.
+Eclipse IDE is a free and open-source integrated development environment. It is primarily used for Java programming, but it also supports other languages like C, C++, Python, and more [1]. To setup Eclipse for C++ development, but we need to install the necessary tools and plugins first. This article is a step-by-step guide to setting up C++ in Eclipse.
 
 # Setup the C++ compiler
 First, we need to install a C++ compiler for Eclipse to use on Windows. GCC (GNU Compiler Collection) is a free and open source C++ compiler. The MinGW-w64 is a version of GCC that is compatible with Microsoft Windows [2]. 
 
-You can download the latest standalone build from WinLabs.com [here](https://winlibs.com/#download-release). 
+You can download the latest standalone build from WinLibs.com [here](https://winlibs.com/#download-release). 
 
-![Download MinGW-w64 Winlabs.com](/assets/images/2024-11-21-eclipse-cpp-1.png){: .align-center}
+![Download MinGW-w64 WinLibs.com](/assets/images/2024-11-21-eclipse-cpp-1.png){: .align-center}
 
 From the downloaded archive, extract the `mingw64` folder and copy it to your C drive. 
 
@@ -67,14 +67,14 @@ The first time we run the application, Eclipse sets up a Run Configuration for t
 ![Project output](/assets/images/2024-11-21-eclipse-cpp-8.png){: .align-center}
 
 ## CDT Plugin
-If you downloaded the C++ version of Eclipse, the C/C++ Development Tools (CDT) plugin [4] should already be included. If you need to install CDT manually you can go to  Help > Eclipse Marketplace, search for CDT and install it. 
+If you downloaded the C++ version of Eclipse, the C/C++ Development Tools (CDT) plugin should already be included. If you need to install CDT manually you can go to  Help > Eclipse Marketplace, search for CDT and install it [4]. 
 
 # Conclusion
-With a little configuration work, Eclipse proved to be a usable C++ development environment on Windows. The IDE provides good support for C++ via the Marketplace and CDT plugin [4]. However, we must provide a C++ compiler to use. The process of setting up the compiler was greatly simplified thanks to the work of the  MinGW-w64 and WinLabs.com projects [2,3]. Once the compiler was sucessfully installed, we were able to build and run C++ projects in Eclipse with minimal effort. 
+With a little configuration, Eclipse proved to be a usable C++ development environment on Windows. The IDE provides good support for C++ via the Marketplace and CDT plugin [4]. However, we must provide a C++ compiler to use. The process of setting up the compiler was greatly simplified thanks to the work of the  MinGW-w64 and WinLibs.com projects [2, 3]. Once the compiler was sucessfully installed, we were able to build and run C++ projects in Eclipse with minimal effort. 
 
 # References
 
-[[1] Eclipse](https://www.eclipse.org/downloads/packages/)
+[[1] Eclipse Packages](https://www.eclipse.org/downloads/packages/)
 
 [[2] MinGW-w64](https://www.mingw-w64.org/)
 
