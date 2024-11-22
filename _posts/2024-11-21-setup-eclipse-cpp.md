@@ -7,12 +7,12 @@ tags:
 excerpt: A guide to configuring the necessary tools and plugins and running an example Hello World program.  
 ---
 # Introduction
-Eclipse IDE is a free and open-source integrated development environment. It is primarily used for Java programming, but it also supports other languages like C, C++, Python, and more [1]. To setup Eclipse for C++ development, but we need to install the necessary tools and plugins first. This article is a step-by-step guide to setting up C++ in Eclipse.
+Eclipse IDE is a free and open-source integrated development environment. It is primarily used for Java programming, but it also supports other languages like C, C++, Python, and more [1]. To setup Eclipse for C++ development, we need to install the necessary tools and plugins first. This article is a step-by-step guide to setting up C++ in Eclipse.
 
 # Setup the C++ compiler
-First, we need to install a C++ compiler for Eclipse to use on Windows. GCC (GNU Compiler Collection) is a free and open source C++ compiler. The MinGW-w64 is a version of GCC that is compatible with Microsoft Windows [2]. 
+First, we need to install a C++ compiler for Eclipse to use. GCC (GNU Compiler Collection) is a free and open source C++ compiler. The MinGW-w64 is a version of GCC that is compatible with Microsoft Windows [2]. 
 
-You can download the latest standalone build from WinLibs.com [here](https://winlibs.com/#download-release). 
+Download the latest standalone build from WinLibs.com [here](https://winlibs.com/#download-release). 
 
 ![Download MinGW-w64 WinLibs.com](/assets/images/2024-11-21-eclipse-cpp-1.png){: .align-center}
 
@@ -24,13 +24,15 @@ It contains a `bin` folder, which holds development related binaries.
 ## Set PATH environment variables
 We need to add this location to the system PATH variable. The system PATH variable is an environment variable that specifies a set of directories where executable programs are located, allowing the operating system to find and run these programs. 
 
-Open an Command Prompt and run `start sysdm.cpl` to launch System Properties.
-
-Edit your System `PATH` environment variable to add the location of your `mingw64\bin` folder. 
+Open a Command Prompt and run `start sysdm.cpl` to launch System Properties.
 
 ![Set Environment Variables](/assets/images/2024-11-21-eclipse-cpp-2.png){: .align-center}
 
+Click on the `Advanced` tab and then click on the `Environment Variables` button. 
+
 ![Set Environment Variables](/assets/images/2024-11-21-eclipse-cpp-3.png){: .align-center}
+
+Edit the system `PATH` variable and add the location of your `mingw64\bin` folder. 
 
 ![Set Environment Variables](/assets/images/2024-11-21-eclipse-cpp-4.png){: .align-center}
 
