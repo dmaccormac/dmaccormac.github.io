@@ -12,7 +12,7 @@ excerpt: A brief look at the history of Alt codes and a reference list of codes 
 # Introduction
 Alt codes have their history rooted in the original IBM PC, released in 1981, which used a character set called Code Page 437. This set included all printable ASCII characters (0-127) and extended characters and symbols (128-255) [1, 2].  
 
-Alt codes were first introduced in Windows 3.1 (released in April 1992) as a way for users to input these extended characters by holding down the Alt key and entering a code on the numeric keypad. While Unicode has come to replace these older character sets, the use of Alt codes is still supported in Windows 11. 
+Alt codes were first introduced in Windows 3.1 (1992) as a way for users to input these extended characters by holding down the Alt key and entering a code on the numeric keypad. While Unicode has come to replace these older character sets, the use of Alt codes is still supported in Windows 11. 
 
 # Common codes
 
@@ -66,10 +66,11 @@ Over time, Windows introduced additional code pages to support different languag
 Alt codes are an interesting example of how early computing solutions have had a lasting impact on how we interact with technology. In the early days of computing, they were widely used as a way to input extended characters and symbols. Although they are no longer the primary method for entering special characters in Windows, they still remain a simple and efficient way to enter symbols quickly.
 
 # Glossary
-| Term |  Description   | 
+
+| **Term** |  **Description**   | 
 |-|-|
 | (ASCII) American Standard Code Information Interchange | Character encoding standard used in computers to represent text | 
-| (ANSI) American National Standards Institute | Non-profit organization that oversees the development of voluntary consensus standards for systems |
+| (ANSI) American National Standards Institute | Non-profit organization that oversees the development of standards for systems |
 | Unicode | Universal character encoding standard for handling text in most of the world's writing systems |
 
 # References
@@ -87,6 +88,7 @@ Alt codes are an interesting example of how early computing solutions have had a
 [Windows-Alt-Codes-Reference-Chart.pdf](/assets/docs/Windows-Alt-Codes-Reference-Chart.pdf)
 
 ### List of Alt Codes
+
 | **Alt Code** | **Character** | **Description** |
 | --- | --- | --- |
 | **Emoticons, Bullets, and Symbols** |     |     |
