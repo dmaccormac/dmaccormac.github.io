@@ -1,5 +1,5 @@
 ---
-title: How to quickly input special characters in Windows using Alt codes
+title: Quickly type symbols in Windows using Alt codes
 date: 2024-11-24
 tags:
   - alt codes
@@ -10,9 +10,9 @@ excerpt: A brief look at the history of Alt codes and a reference list of codes 
 ---
 
 # Introduction
-Alt codes have their history rooted in the original IBM PC, released in 1981, which used a character set called Code Page 437. This set included all printable ASCII characters (0-127) and extended characters and symbols (128-255) [1, 2].  
+Alt codes have their history rooted in the original IBM PC, released in 1981, which used a character set called Code Page 437. This set included all printable ASCII characters (0-127) and extended characters and symbols (128-255) [1, 2].
 
-Alt codes were first introduced in Windows 3.1 (1992) as a way for users to input these extended characters by holding down the Alt key and entering a code on the numeric keypad. While Unicode has come to replace these older character sets, the use of Alt codes is still supported in Windows 11. 
+Alt codes were first introduced in Windows 3.1 (1992) as a way for users to input these extended characters by holding down the Alt key and entering a code on the numeric keypad. While Unicode has come to replace these older character sets, the use of Alt codes is still supported in Windows 11.
 
 # Common codes
 
@@ -58,9 +58,9 @@ Code Page 437 is an 8-bit character encoding used in the original IBM PC. It inc
 From the above chart, we can get the hex digits for the character by combining the first and second row numbers. For example, the rightward arrow charcter hexcode is 1A. If we convert this to base 10 we get 26, which is the matching Alt key code for → character.
 
 # History of Windows code pages
-Windows 1.0 (1985) came with a single character set known as the Windows ANSI character set. Windows 2.0 (1987) added missing characters like × and ÷ and  Windows 3.1 (1992) added 22 new characters. The term "ANSI" is a misnomer — while Windows code pages were initially based on drafts submitted to ANSI, they were never officially standardized. 
+Windows 1.0 (1985) came with a single character set known as the Windows ANSI character set. Windows 2.0 (1987) added missing characters like × and ÷ and  Windows 3.1 (1992) added 22 new characters. The term "ANSI" is a misnomer — while Windows code pages were initially based on drafts submitted to ANSI, they were never officially standardized.
 
-Over time, Windows introduced additional code pages to support different languages and regions. With the advent of Unicode, Windows gradually moved away from these code pages, providing a universal character set that supports virtually all languages. 
+Over time, Windows introduced additional code pages to support different languages and regions. With the advent of Unicode, Windows gradually moved away from these code pages, providing a universal character set that supports virtually all languages.
 
 # Conclusion
 Alt codes are an interesting example of how early computing solutions have had a lasting impact on how we interact with technology. In the early days of computing, they were widely used as a way to input extended characters and symbols. Although they are no longer the primary method for entering special characters in Windows, they still remain a simple and efficient way to enter symbols quickly.
