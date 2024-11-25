@@ -1,5 +1,7 @@
 ---
-title: How to pin Control Panel applets to the Windows taskbar
+title: Pin Control Panel applets to the Windows taskbar
+date: 2024-11-13
+last_modified_at: 2024-11-24
 tags:
   - control panel
   - taskbar
@@ -24,8 +26,19 @@ A CLSID (Class Identifier) is a globally unique identifier (GUID) used in Micros
   
 ![Create a shortcut using the CLSID](/assets/images/2024-11-13-windows-clsid-key-guid-2.png)
 
+# References
 
-# CLSID cheatsheet
+[[1] Component Object Model (COM) → CLSID Key](https://learn.microsoft.com/en-us/windows/win32/com/clsid-key-hklm)
+
+[[2] List of Windows 11 CLSID Key (GUID) Shortcuts](https://www.elevenforum.com/t/list-of-windows-11-clsid-key-guid-shortcuts.1075/)
+
+[[3] Shells, Shortcuts, and CLSID Listing](https://www.sysnative.com/forums/threads/shells-shortcuts-and-clsid-listing-windows-10-8-1-8-7.12156/#anchor0)
+
+[[4] How-to: A list of common ClassIDs](https://ss64.com/nt/syntax-clsid.html)
+
+# Appendix
+
+### List of CLSIDs 
 
 | **Item** | **CLSID** |
 | --- |  --- |
@@ -143,10 +156,3 @@ A CLSID (Class Identifier) is a globally unique identifier (GUID) used in Micros
 | Windows Firewall | ::{4026492F-2F69-46B8-B9BF-5654FC07E423} |
 | Work Folders | ::{ECDB0924-4208-451E-8EE0-373C0956DE16} |
 
-# References
-
-[List of Windows 11 CLSID Key (GUID) Shortcuts](https://www.elevenforum.com/t/list-of-windows-11-clsid-key-guid-shortcuts.1075/)
-
-[Shells, Shortcuts, and CLSID Listing](https://www.sysnative.com/forums/threads/shells-shortcuts-and-clsid-listing-windows-10-8-1-8-7.12156/#anchor0)
-
-[How-to: A list of common ClassIDs](https://ss64.com/nt/syntax-clsid.html)
