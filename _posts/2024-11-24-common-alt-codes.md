@@ -62,6 +62,13 @@ Windows 1.0 (1985) came with a single character set known as the Windows ANSI ch
 
 Over time, Windows introduced additional code pages to support different languages and regions. With the advent of Unicode, Windows gradually moved away from these code pages, providing a universal character set that supports virtually all languages.
 
+# Inserting Unicode characters
+In modern Windows, you can use the `Alt + X` keyboard shortcut to insert Unicode characters into documents. 
+
+First, type the hexadecimal code of the Unicode character you want to insert. For example, to insert the dollar symbol ($), you would type 0024. After typing the code, press the Alt + X key shortcut. This will convert the code into the corresponding Unicode character.
+
+Use Windows Character Map or [Character Map UWP](https://github.com/character-map-uwp/Character-Map-UWP) to find Unicode characters and their corresponding hexadecimal codes.
+
 # Conclusion
 Alt codes are an interesting example of how early computing solutions have had a lasting impact on how we interact with technology. In the early days of computing, they were widely used as a way to input extended characters and symbols. Although they are no longer the primary method for entering special characters in Windows, they still remain a simple and efficient way to enter symbols quickly.
 
