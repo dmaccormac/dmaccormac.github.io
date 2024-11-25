@@ -8,17 +8,21 @@ tags:
   - shortcuts
 excerpt: Create shortcuts to system applets and special folders by using the item's class ID from the registry. 
 ---
+# Introduction
+A CLSID (Class Identifier) is a globally unique identifier (GUID) used in Microsoft Windows to identify a specific class of objects, typically associated with COM (Component Object Model) components, ActiveX controls, or other system components. 
 
-A CLSID (Class Identifier) is a globally unique identifier (GUID) used in Microsoft Windows to identify a specific class of objects, typically associated with COM (Component Object Model) components, ActiveX controls, or other system components. These identifiers are registered in the Windows registry and can be used to locate and interact with software components, services, or objects.
+These identifiers are registered in the Windows registry and can be used to locate and interact with software components, services, or objects. For example, you can create shortcuts to system applets and special folders by using the item's class ID from the registry.
 
-# Find the CLSID
+# Create a shortcut using a CLSID
+
+## Find the CLSID
 - Search the registry for the item by name
 - Copy the key name (CLSID)
 - Optionally, copy the icon location
   
 ![Search the registry for the item](/assets/images/2024-11-13-windows-clsid-key-guid-1.png)
 
-# Create the shortcut
+## Create the shortcut
 - Create shortcut in `%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`
 - Set the Target to `C:\Windows\explorer.exe Shell:::{CLSID}`
 - Change the shortcut icon
