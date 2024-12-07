@@ -116,19 +116,19 @@ analytics:
 author:
   name             : "Dan MacCormac"
   avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Computer related ramblings"
+  bio              : "Computer Science Research"
   location         : #"Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:zocn1i8m2@mozmail.com"
+      url: "mailto:dan@maccormac.net"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://x.com/danmaccormac"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
