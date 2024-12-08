@@ -18,12 +18,12 @@ minimal_mistakes_skin    : "dark" #"default", "air", "aqua", "contrast", "dark",
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Dan's blog"
+title                    : "maccormac.net"
 title_separator          : "-"
-subtitle                 : #"Computer related ramblings" # site tagline that appears below site title in masthead
+subtitle                 : #"Computer Science Research" # site tagline that appears below site title in masthead
 name                     : #"Your Name"
 description              : #"An amazing website."
-url                      : "https://dmaccormac.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://www.maccormac.net" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -138,6 +138,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+      - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/danmaccormac.bsky.social"
 
 # Site Footer
 footer:
