@@ -12,12 +12,7 @@ In Windows Terminal, the `settings.json` file is used to configure various setti
 # Configuration
 
 ## Opening settings.json
-Open Windows Terminal and click on the down arrow ▼ in the top bar next to the tabs. You can also access settings using the keyboard shortcut combination `Ctrl + , (comma)`. Once in settings, click on the option for `Open JSON file` in the lower-left corner. This will open the settings.json file in your default text editor.
-
-You can also access the `settings.json` file directly at the following path:
-
-`C:\Users\<YourUsername>\AppData\Local\Packages\Microsoft.WindowsTerminal_<random_string>\LocalState
-`
+Open Windows Terminal and click on the down arrow ▼ in the top bar next to the tabs. You can also access settings using the keyboard shortcut combination `Ctrl + , (comma)`. Once in settings, click on the option for `Open JSON file` in the lower-left corner. This will open the settings.json file in your default text editor. You can also access the `settings.json` file directly at `Packages\Microsoft.WindowsTerminal` under the Local AppData folder.
 
 ## Configuring settings.json
 When you open the settings.json file, configuration is categorized in several different sections. 
