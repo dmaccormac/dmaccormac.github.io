@@ -47,44 +47,39 @@ Now that we have covered the basics, let's walk through how to download and use 
 Compiler.
 
 # How to Download and Use TCC
+
 ## Step 1: Download TCC
 The first step is to get the compiler. TCC is open-source and available for free, so you can
-download it from the [official site](https://www.bellard.org/tcc/) or the [unofficial GitHub repository](https://github.com/TinyCC/tinycc).
+download it from the official mirror [here](https://download.savannah.gnu.org/releases/tinycc/)
 
-### From GitHub
-1. Visit the Tiny C Compiler GitHub repository [here](https://github.com/TinyCC/tinycc).
-2. Click on the Releases section to find the latest version.
-3. Download the appropriate file for your operating system (e.g., .tar.gz for Linux/macOS or
-.zip for Windows).
+### On Windows
+For Windows users, download the latest x64 binary release [here](https://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip), extract the files to a folder and you're ready to start using TCC.
 
-Alternatively, if you’re on a Linux or macOS system, you might be able to install TCC using your package manager.
-
-### On Linux (using Apt)
+### On Linux (apt)
 
 ```bash
 sudo apt-get update
 sudo apt-get install tcc
 ```
 
-### On macOS (using Homebrew)
+### On macOS (homebrew)
 
 ```bash
 brew install tcc
 ```
 
-### On Windows
-For Windows users, you can download the precompiled binaries from the [TCC website](https://www.bellard.org/tcc/) or [GitHub](https://github.com/TinyCC/tinycc). After downloading, simply extract the files to a folder, and you're ready to start using TCC.
-
-## Step 2: Installing TCC
+## Step 2: Install TCC
 On Linux or macOS, if you used a package manager like `apt` or `brew`, TCC will be installed
 automatically. You can verify the installation by running:
 
-`tcc --version`
+```bash
+tcc --version
+```
 
-If you downloaded a precompiled binary, you can install tcc by extracting the files to a directory of your choice.
+If you downloaded a precompiled binary, you can install tcc by copying the files to a directory of your choice.
 
-## Step 3: Writing Your First C Program
-Now that TCC is installed, let's write a simple C program to test the compiler. Open your text editor and create a file called `hello.c` with the following code:
+## Step 3: Create a C Program
+Now that TCC is installed, let's write a simple C program to test the compiler. Open a text editor and create a file called `hello.c` with the following code:
 
 ```c
 #include <stdio.h>
@@ -100,7 +95,9 @@ Prompt on Windows) and navigate to the directory where your `hello.c` file is sa
 
 To compile the code, run the following command:
 
-``tcc hello.c -o hello.exe``
+```bash
+tcc hello.c -o hello.exe
+```
 
 TCC will compile your code into an executable file.
 
@@ -108,16 +105,16 @@ TCC will compile your code into an executable file.
 After the compilation is complete, you can run the program by typing:
 
 On Linux or macOS:
-
-`./hello`
-
+```bash
+./hello
+```
 On Windows:
 
-`hello.exe`
+```bash
+hello.exe
+```
 
-This should display the message:
-
-``Hello, world!``
+This should display the message: `Hello, world!`
 
 ## Step 6: Exploring Further
 TCC is a very simple compiler, but it does support some interesting features, such as:
@@ -162,4 +159,4 @@ learning environments, small projects, or rapid prototyping.
 
 [[2] Tiny C GitHub - Unofficial mirror of mob development branch](https://github.com/TinyCC/tinycc)
 
-[[2] GCC, the GNU Compiler Collection]((https://gcc.gnu.org/))
+[[3] GCC, the GNU Compiler Collection]((https://gcc.gnu.org/))
