@@ -129,7 +129,9 @@ instance, you can use the -O flag for optimizations or the -g flag to include de
 ### Example 1: Compiling a Program with Optimization
 To compile with optimizations enabled:
 
-`tcc -O2 hello.c -o hello_opt.exe`
+```bash
+tcc -O2 hello.c -o hello_opt.exe
+```
 
 This will use the optimization level -O2 , which improves performance (at the cost of some
 additional compilation time).
@@ -141,7 +143,9 @@ The file `hello_win.c` contains source code for an example 'hello world' program
 
 To compile `hello_win.c` on Windows; open a command prompt, navigate to the `tcc` folder and run:
 
-`tcc .\examples\hello_win.c -o hello_win.exe`
+```bash
+tcc .\examples\hello_win.c -o hello_win.exe
+```
 
 The default output of `hello_win.exe` is shown below. The program can also take command line arguments which are displayed instead of the default greeting. This can serve as a useful graphical equivelant to the `echo` command.
 
