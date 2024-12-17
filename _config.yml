@@ -129,12 +129,16 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dmaccormac"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/danmaccormac"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/dmaccorm"
     - label: "Bluesky"
       icon: "fab fa-fw fa-square-bluesky"
       url: "https://bsky.app/profile/danmaccormac.bsky.social"
+    - label: "X"
+      icon: "fab fa-fw fa-square-x-twitter"
+      url: "https://x.com/danmaccormac"
+
 
 # Site Footer
 footer:
