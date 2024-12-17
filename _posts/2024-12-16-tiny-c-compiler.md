@@ -144,7 +144,7 @@ The file `hello_win.c` contains source code for an example 'hello world' program
 To compile `hello_win.c` on Windows; open a command prompt, navigate to the `tcc` folder and run:
 
 ```bash
-tcc .\examples\hello_win.c -o hello_win.exe
+tcc examples\\hello_win.c -o hello_win.exe
 ```
 
 The default output of `hello_win.exe` is shown below. The program can also take command line arguments which are displayed instead of the default greeting. This can serve as a useful graphical equivelant to the `echo` command.
