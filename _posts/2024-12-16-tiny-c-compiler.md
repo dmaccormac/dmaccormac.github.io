@@ -151,7 +151,7 @@ The default output of `hello_win.exe` is shown below. The program can also take 
 
 ![example](/assets/images/2024-12-16-tiny-c-compiler.png){: .align-center}
 
-## Conclusion
+# Conclusion
 The Tiny C Compiler is an excellent tool for anyone looking for a lightweight, fast, and easy-to-use
 C compiler. Whether you're a beginner looking to learn C programming or an experienced
 developer looking for a simple way to quickly compile small programs, TCC offers a straightforward
