@@ -144,7 +144,7 @@ author:
 footer:
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope"
+      icon: "far fa-fw fa-envelope"
       url: "mailto:dan@maccormac.net"
     - label: "WhatsApp"
       icon: "fab fa-fw fa-whatsapp"
