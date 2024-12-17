@@ -127,7 +127,7 @@ author:
       icon: "fab fa-fw fa-square-whatsapp"
       url: " https://wa.me/19496673622"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-fw fa-square-github"
       url: "https://github.com/dmaccormac"
     - label: "Instagram"
       icon: "fab fa-fw fa-square-instagram"
@@ -143,6 +143,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:dan@maccormac.net"
+    - label: "WhatsApp"
+      icon: "fab fa-fw fa-square-whatsapp"
+      url: " https://wa.me/19496673622"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
