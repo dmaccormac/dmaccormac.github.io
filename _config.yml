@@ -123,12 +123,15 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:dan@maccormac.net"
+    - label: "Bookings"
+      icon: "fas fa-fw fa-calendar"
+      url: "https://outlook.office.com/bookwithme/user/bddc1b1d7cc9443db3d5a1b084550a29@maccormac.net/meetingtype/wYR0SIgffk6qDdo0IdeMxw2?anonymous&ep=mlink"
     - label: "Teams"
       icon: "fab fa-fw fa-microsoft"
-      url: " https://teams.microsoft.com/l/chat/0/0?users=dan@maccormac.net"
+      #url: " https://teams.microsoft.com/l/chat/0/0?users=dan@maccormac.net"
     - label: "WhatsApp"
       icon: "fab fa-fw fa-square-whatsapp"
-      url: " https://wa.me/19496673622"
+      #url: " https://wa.me/19496673622"
     - label: "GitHub"
       icon: "fab fa-fw fa-square-github"
       url: "https://github.com/dmaccormac"
@@ -142,19 +145,21 @@ author:
       icon: "fab fa-fw fa-square-x-twitter"
       url: "https://x.com/danmaccormac"
 
-
 # Site Footer
 footer:
   links:
     - label: "Email"
       icon: "far fa-fw fa-envelope"
       url: "mailto:dan@maccormac.net"
+    - label: "Bookings"
+      icon: "far fa-fw fa-calendar"
+      url: "https://outlook.office.com/bookwithme/user/bddc1b1d7cc9443db3d5a1b084550a29@maccormac.net/meetingtype/wYR0SIgffk6qDdo0IdeMxw2?anonymous&ep=mlink"   
     - label: "Teams"
       icon: "fab fa-fw fa-microsoft"
-      url: " https://teams.microsoft.com/l/chat/0/0?users=dan@maccormac.net"
+      #url: " https://teams.microsoft.com/l/chat/0/0?users=dan@maccormac.net"
     - label: "WhatsApp"
       icon: "fab fa-fw fa-whatsapp"
-      url: " https://wa.me/19496673622"
+      #url: " https://wa.me/19496673622"
 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
