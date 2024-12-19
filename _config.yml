@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" #"default", "air", "aqua", "contrast", "dark", 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "maccormac.net"
+title                    : "Dan's Blog"
 title_separator          : "-"
 subtitle                 : "Semper discere" # site tagline that appears below site title in masthead
 name                     : #"Your Name"
@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Dan MacCormac"
   avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Computer Science Research"
+  bio              : "Research interests include ubiquitous computing, assistive technologies, cybersecurity and digital privacy."
   location         : #"Somewhere"
   email            :
   links:
