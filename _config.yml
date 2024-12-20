@@ -129,7 +129,7 @@ author:
     - label: "Buy Me a Coffee"
       icon: "fab fa-fw fa-mug-hot"
       #url: "https://buymeacoffee.com/dmaccormac"
-      - label: "Teams"
+    - label: "Teams"
       icon: "fab fa-fw fa-microsoft"
       #url: " https://teams.microsoft.com/l/chat/0/0?users=dan@maccormac.net"
     - label: "WhatsApp"
