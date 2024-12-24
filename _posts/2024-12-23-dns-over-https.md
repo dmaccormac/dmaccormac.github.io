@@ -23,8 +23,7 @@ DNS over HTTPS (DoH) is a protocol that encrypts DNS queries and responses betwe
 
 
 # Configure DNS over HTTPS on Windows 11
-
-Windows 11 only supports a certain set of free DNS services. You can view this list by running the following command:
+At this time, Windows 11 only supports a certain set of free DNS services. You can view this list by running the following command:
 
 ```bash
 netsh dns show encryption
@@ -33,6 +32,7 @@ netsh dns show encryption
 Below is a list of currently supported public DNS servers. It's best to choose two separate providers for primary and secondary services. 
 
 ## IPv4 Addresses
+
 | DNS Service | Address |
 |-|-|
 | Google Primary | 8.8.8.8 |
@@ -43,6 +43,7 @@ Below is a list of currently supported public DNS servers. It's best to choose t
 | Quad9 Secondary | 149.112.112.112 |
 
 ## IPv6 Addresses
+
 | DNS Service | Address |
 |-|-|
 | Google Primary | 2001:4860:4860::8888 |
@@ -51,6 +52,9 @@ Below is a list of currently supported public DNS servers. It's best to choose t
 | Cloudflare Secondary | 2606:4700:4700::1001 |
 | Quad9 Primary | 2620:fe::fe |
 | Quad9 Secondary | 2620:fe::fe:9 |
+
+
+You can configure DNS over HTTPS via by following the steps below:
 
 1. Press **Win + i** or  right click on the **Start** menu and select **Settings**
 2. In the Settings window, click on **Network & Internet** from the left sidebar
