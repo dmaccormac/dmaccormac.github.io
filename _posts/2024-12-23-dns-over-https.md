@@ -7,7 +7,9 @@ excerpt: One of the easiest and most effective ways to protect your online activ
 ---
 
 # Introduction
-In an era where privacy and security are paramount, one of the easiest and most effective ways to protect your online activities is by using DNS over HTTPS (DoH) [1]. This method encrypts your DNS requests, preventing third parties from eavesdropping or tampering with your browsing history. Fortunately, Windows 11 provides support for DNS over HTTPS [2]. Here's a step-by-step guide to help you secure your DNS traffic using DNS over HTTPS (DoH).
+In an era where privacy and security are paramount, one of the easiest and most effective ways to protect your online activities is by using DNS over HTTPS (DoH). This method encrypts your DNS requests, preventing third parties from eavesdropping or tampering with your browsing history. [1, 2]
+
+Fortunately, Windows 11 provides support for DNS over HTTPS. Here's a step-by-step guide to help you secure your DNS traffic using DNS over HTTPS (DoH). 
 
 # What is DNS over HTTPS?
 
@@ -19,7 +21,9 @@ DNS over HTTPS (DoH) is a protocol that encrypts DNS queries and responses betwe
 - **Security**: Protects your DNS traffic from interception or alteration.
 - **Bypasses DNS Censorship**: Some governments or organizations block certain websites via DNS. DoH can help bypass this censorship by encrypting DNS queries.
 
-# Public DNS servers
+
+# Configure DNS over HTTPS on Windows 11
+
 Windows 11 only supports a certain set of free DNS services. You can view this list by running the following command:
 
 ```bash
@@ -28,6 +32,7 @@ netsh dns show encryption
 
 Below is a list of currently supported public DNS servers. It's best to choose two separate providers for primary and secondary services. 
 
+## IPv4 Addresses
 | DNS Service | Address |
 |-|-|
 | Google Primary | 8.8.8.8 |
@@ -37,6 +42,7 @@ Below is a list of currently supported public DNS servers. It's best to choose t
 | Quad9 Primary | 9.9.9.9 |
 | Quad9 Secondary | 149.112.112.112 |
 
+## IPv6 Addresses
 | DNS Service | Address |
 |-|-|
 | Google Primary | 2001:4860:4860::8888 |
@@ -45,10 +51,6 @@ Below is a list of currently supported public DNS servers. It's best to choose t
 | Cloudflare Secondary | 2606:4700:4700::1001 |
 | Quad9 Primary | 2620:fe::fe |
 | Quad9 Secondary | 2620:fe::fe:9 |
-
-
-# Step-by-Step Guide to Configure DNS over HTTPS on Windows 11
-
 
 1. Press **Win + i** or  right click on the **Start** menu and select **Settings**
 2. In the Settings window, click on **Network & Internet** from the left sidebar
@@ -59,12 +61,11 @@ Below is a list of currently supported public DNS servers. It's best to choose t
 7. Set your preferred and alternate DNS servers for both IPv4 and IPv6. 
 8. Under **DNS over HTTPS** make sure to enable the option for **On (automatic template)**.
 
-![Configure DNS over HTTPS part1](/assets/images/2024-12-23_dns_over_https-1.png){: .align-center}
+![Configure DNS over HTTPS part1](/assets/images/2024-12-23_dns_over_https-1.png)
 
-![Configure DNS over HTTPS part2](/assets/images/2024-12-23_dns_over_https-2.png){: .align-center}
+![Configure DNS over HTTPS part2](/assets/images/2024-12-23_dns_over_https-2.png)
 
-![Configure DNS over HTTPS part3](/assets/images/2024-12-23_dns_over_https-3.png){: .align-center}
-
+![Configure DNS over HTTPS part3](/assets/images/2024-12-23_dns_over_https-3.png)
 
 To check if DNS over HTTPS is working properly:
 1. Open a browser and visit a website like [https://1.1.1.1/help](https://1.1.1.1/help).
@@ -72,7 +73,7 @@ To check if DNS over HTTPS is working properly:
    
 If everything is set up correctly, it should show "Yes" for DNS over HTTPS support.
 
-### Troubleshooting
+## Troubleshooting
 
 If you encounter issues, here are a few things to check:
 1. **DNS Service Not Responding**: Ensure that the DNS provider you've selected supports DoH..
@@ -84,10 +85,10 @@ If you encounter issues, here are a few things to check:
 Configuring DNS over HTTPS on Windows 11 is a straightforward process that significantly improves your security and privacy online. By following the steps above, you can ensure that your DNS queries are encrypted and protected from prying eyes, enhancing your browsing experience. With the rising importance of cybersecurity and privacy, switching to DNS over HTTPS (DoH) is a small but impactful step toward securing your online activity.
 
 # References 
-[[1] Mozilla - DNS over HTTPS](https://mozilla.github.io/doh-operations/)
+[[1] Secure DNS Client over HTTPS (DoH)](https://learn.microsoft.com/en-us/windows-server/networking/dns/doh-client-support)
 
-[[2] DNS over HTTPS Windows 11](https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-over-https)
+[[2] Cloudflare DNS over HTTPS](https://www.cloudflare.com/learning/dns/what-is-dns-over-https/)
 
-[[3] Cloudflare DNS over HTTPS](https://www.cloudflare.com/learning/dns/what-is-dns-over-https/)
+[[3] Firefox DNS over HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https)
 
 
