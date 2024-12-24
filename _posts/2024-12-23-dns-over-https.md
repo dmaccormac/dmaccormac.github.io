@@ -1,13 +1,13 @@
 ---
 title: How to Configure DNS over HTTPS (DoH) on Windows 11
 date: 2024-12-23
-last_modified_at: 2024-12-23
+last_modified_at: 2024-12-24
 tags: dns https cybersecurity
 excerpt: One of the easiest and most effective ways to protect your online activities is by using DNS over HTTPS (DoH).
 ---
 
 # Introduction
-In an era where privacy and security are paramount, one of the easiest and most effective ways to protect your online activities is by using DNS over HTTPS (DoH). This method encrypts your DNS requests, preventing third parties from eavesdropping or tampering with your browsing history. [1, 2]
+By default, DNS queries and responses are sent in plaintext (via UDP), which means they can be read by networks, ISPs, or anybody able to monitor transmissions. In an era where privacy and security are paramount, one of the easiest and most effective ways to protect your online activities is by using DNS over HTTPS (DoH). This method encrypts your DNS requests, preventing third parties from eavesdropping [1, 2].
 
 Fortunately, Windows 11 provides support for DNS over HTTPS. Here's a step-by-step guide to help you secure your DNS traffic using DNS over HTTPS (DoH). 
 
@@ -60,10 +60,10 @@ You can configure DNS over HTTPS via by following the steps below:
 2. In the Settings window, click on **Network & Internet** from the left sidebar
 3. Select your network adapter — either **Wi-Fi** or **Ethernet**
 4. Click **Hardware Properties**
-5. Under **DNS Server Assignment, clck **Edit**
-6. Select **Manual** for DNS configuration
-7. Set your preferred and alternate DNS servers for both IPv4 and IPv6. 
-8. Under **DNS over HTTPS** make sure to enable the option for **On (automatic template)**.
+5. Under **DNS Server Assignment**, click **Edit**
+6. Select **Manual** DNS configuration
+7. Set your preferred and alternate DNS servers for both IPv4 and IPv6 
+8. Under **DNS over HTTPS** make sure to enable the option for **On (automatic template)**
 
 ![Configure DNS over HTTPS part1](/assets/images/2024-12-23_dns_over_https-1.png)
 
@@ -72,7 +72,7 @@ You can configure DNS over HTTPS via by following the steps below:
 ![Configure DNS over HTTPS part3](/assets/images/2024-12-23_dns_over_https-3.png)
 
 To check if DNS over HTTPS is working properly:
-1. Open a browser and visit a website like [https://1.1.1.1/help](https://1.1.1.1/help).
+1. Open a browser and visit [https://1.1.1.1/help](https://1.1.1.1/help).
 2. This site will tell you if DoH is successfully configured and functioning on your system.
    
 If everything is set up correctly, it should show "Yes" for DNS over HTTPS support.
@@ -86,7 +86,7 @@ If you encounter issues, here are a few things to check:
 
 # Conclusion
 
-Configuring DNS over HTTPS on Windows 11 is a straightforward process that significantly improves your security and privacy online. By following the steps above, you can ensure that your DNS queries are encrypted and protected from prying eyes, enhancing your browsing experience. With the rising importance of cybersecurity and privacy, switching to DNS over HTTPS (DoH) is a small but impactful step toward securing your online activity.
+Configuring DNS over HTTPS on Windows 11 is a straightforward process that significantly improves your security and privacy online. By following the steps above, you can ensure that your DNS queries are encrypted and protected from prying eyes, enhancing your browsing experience. With the rising importance of cybersecurity and privacy, switching to DNS over HTTPS (DoH) is a small but impactful step toward securing your online activities.
 
 # References 
 [[1] Secure DNS Client over HTTPS (DoH)](https://learn.microsoft.com/en-us/windows-server/networking/dns/doh-client-support)
