@@ -13,7 +13,7 @@ Fortunately, Windows 11 provides support for DNS over HTTPS. Here's a step-by-st
 
 # What is DNS over HTTPS?
 
-DNS over HTTPS (DoH) is a protocol that encrypts DNS queries and responses between your device and a DNS server. Unlike traditional DNS, which sends queries over an unencrypted connection, DoH encrypts these queries to ensure they can't be intercepted or manipulated by third parties. This improves privacy and security, preventing man-in-the-middle attacks and making it more difficult for hackers to track your online activities.
+DNS over HTTPS (DoH) is a protocol that encrypts DNS queries and responses between your device and a DNS server. Unlike traditional DNS, which sends queries over an unencrypted connection, DoH encrypts these queries to ensure they can't be intercepted or manipulated by third parties. This improves privacy and security, preventing man-in-the-middle attacks and making it more difficult to track your online activities.
 
 # Benefits of DNS over HTTPS
 
@@ -56,13 +56,13 @@ Below is a list of currently supported public DNS servers. It's best to choose t
 
 You can configure DNS over HTTPS via by following the steps below:
 
-1. Press **Win + i** or  right click on the **Start** menu and select **Settings**
-2. In the Settings window, click on **Network & Internet** from the left sidebar
+1. Right click on the Start menu and select **Settings**
+2. Click on **Network & Internet** in the left sidebar
 3. Select your network adapter — either **Wi-Fi** or **Ethernet**
 4. Click **Hardware Properties**
 5. Under **DNS Server Assignment**, click **Edit**
 6. Select **Manual** DNS configuration
-7. Set your preferred and alternate DNS servers for both IPv4 and IPv6 
+7. Set your preferred and alternate DNS servers for IPv4 and IPv6 
 8. Under **DNS over HTTPS** make sure to enable the option for **On (automatic template)**
 
 ![Configure DNS over HTTPS part1](/assets/images/2024-12-23_dns_over_https-1.png)
@@ -80,7 +80,7 @@ If everything is set up correctly, it should show "Yes" for DNS over HTTPS suppo
 ## Troubleshooting
 
 If you encounter issues, here are a few things to check:
-1. **DNS Service Not Responding**: Ensure that the DNS provider you've selected supports DoH..
+1. **DNS Service Not Responding**: Ensure that the DNS provider you've selected supports DoH.
 2. **Network Conflicts**: Temporarily disable any VPN or other network management software.
 3. **Check Firewall Settings**: Make sure that your firewall allows encrypted DNS traffic.
 
