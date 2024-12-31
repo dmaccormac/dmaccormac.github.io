@@ -78,11 +78,11 @@ When the page is launched, there is a default timeout of 5 seconds before the re
 
 The application is available on the project GitHub page [here](https://github.com/dmaccormac/favman).
 
-# Limitations
+## Limitations
 
 There are some inherent limitations to this approach. Once the redirect is completed the default icon will be displayed in the window title bar. Adjusting the default timeout of five seconds requires some technical capabilities which could pose a challenge for some users. While the redirect timeout can be minimized by editing the HTML file, the redirect page will still be briefly visible to the end user.   
 
-# Further work
+## Further work
 
  Initial testing highlighted several areas with opportunities for improvement. This implementation lays the groundwork for future developments such as support for multiple icon sizes and formats, ability to modify existing items, and adding more granular customization options. 
 
