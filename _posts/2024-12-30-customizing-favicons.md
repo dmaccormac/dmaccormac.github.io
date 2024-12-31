@@ -8,9 +8,9 @@ excerpt: Favman is a tool to easily create HTML bookmark files with custom icons
 
 # Introduction
 
-Research on the use of visual aids, such color coding, in improving human-computer interaction has demonstrated the significant value of these tools [1]. Such elements help make digital interfaces more accessible, intuitive, and usable for a broader range of users, including those with disabilities [2, 3].
+Research on the use of visual aids, such as color coding, in improving human-computer interaction has demonstrated the significant value of these tools [1]. Such elements help to make digital interfaces more accessible, intuitive, and usable for a broader range of users, including those with disabilities [2, 3].
 
-This article outlines an accessibility challenge faced in relation to website icons, examines existing solutions to the problem and proposes a new browser agnostic solution. Finally, the proposed solution is implemented using a small Windows based graphical application to test the approach.
+This article outlines a current accessibility challenge faced in relation to website icons, examines existing solutions to the problem and proposes a new browser agnostic solution. Finally, the proposed solution is implemented using a small Windows based graphical application to test the approach.
 
 # Challenges in customizing favicons
 
@@ -26,20 +26,19 @@ There are several reasons why browsers do not natively allow users to change fav
 
 # Current approaches
 
-To overcome this limitation, users often turn to third-party browser extensions. These extensions provide additional functionality that browsers don’t offer natively. Popular extensions like Bookmark Favicon Changer for Chrome allow users to manually upload or select custom icons for their bookmarks.
+To overcome this limitation, users often turn to third-party browser extensions. These extensions provide additional functionality that browsers don’t offer natively. 
 
-The approach typically work by modifying the bookmark entries on the local level, essentially replacing the favicon image with one chosen by the user. Users can either upload an image from their device or specify a URL for the desired favicon.
+Popular extensions like Bookmark Favicon Changer for Chrome allow users to manually upload or select custom icons for their bookmarks.The approach typically work by modifying the bookmark entries on the local level, essentially replacing the favicon image with one chosen by the user. 
 
 While these extensions can provide a solution to the problem, they also come with certain challenges.
 
 - Security: Third-party extensions often require access to users’ browsing data. 
-- Compatibility: Each browser requires a separate extension, and not all browsers support such extensions.
-- Updates: Extensions require maintenance and may break when the browser is updated to a new version.
-
+- Updates: Extensions require maintenance and may break when the browser is updated.
+- Compatibility: Such extensions are not available for all browsers.
 
 # Our approach
 
-Our approach builds on the existing work to date, while employing a browser agnostic approach to modify the data locally. This approach removes the need to compromise the integrity of the browser, and provides a single solution that works across all environments. 
+Our approach builds on the existing work to date, while employing a browser agnostic approach to modify the data locally. This approach removes the need to add third party extensions to the browser, and provides a single solution that works across all environments. 
 
 The proposed solution uses a HTML redirect with a custom `<link>` element. 
 
@@ -67,7 +66,7 @@ A complete example is shown below:
 
 ## Implementation
 
-To test the proposed approach, we created a small tool for Windows called *Favman*, which allows you to easily create HTML bookmark files with custom icons. A screenshot is shown below.
+To test the proposed approach, we created a small tool for Windows - Favman - which allows you to easily create HTML bookmark files with custom icons. A screenshot is shown below.
 
 ![Create a bookmark using a custom icon with Favman](/assets/images/screenshot2.png)
 
