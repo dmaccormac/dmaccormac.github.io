@@ -84,11 +84,11 @@ There are some inherent limitations to this approach. Once the redirect is compl
 
 # Further work
 
- Initial testing highlighted several areas with opportunities for improvement. The initial implementation lays the groundwork for future developments such as support for multiple icon sizes and formats, ability to modify existing items, and adding more granular customization options. 
+ Initial testing highlighted several areas with opportunities for improvement. This implementation lays the groundwork for future developments such as support for multiple icon sizes and formats, ability to modify existing items, and adding more granular customization options. 
 
 # Conclusion
 
-Visual aids are indispensable in the design of accessible digital interfaces, particularly for users with disabilities. Icons, colors, contrast, and structured layouts can make systems more intuitive, reduce cognitive load, and support diverse interaction methods. Incorporating these elements into designs not only fosters inclusivity but also improves the overall user experience. Testing the proposed solution using the Favman implementation demonstrated that this approach provides a viable solution with some inherent limitations.
+Visual aids are indispensable in the design of accessible digital interfaces, particularly for users with disabilities. Icons, colors, contrast, and structured layouts can make systems more intuitive, reduce cognitive load, and support diverse interaction methods. Incorporating these elements into designs not only fosters inclusivity but also improves the overall user experience. Testing the proposed solution using the Favman implementation demonstrated that this approach provides a viable solution, albeit with some inherent limitations.
 
 # References
 
