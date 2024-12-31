@@ -1,7 +1,7 @@
 ---
 title: A browser agnostic approach to customizing favorite icons
 date: 2024-12-30
-last_modified_at: 2024-12-30
+last_modified_at: 2024-12-31
 tags: web accessibility favicon favman
 excerpt: Favman is a tool to easily create HTML bookmark files with custom icons.
 ---
@@ -38,7 +38,7 @@ While these extensions can provide a solution to the problem, they also come wit
 
 # Our approach
 
-Our approach builds on the existing work to date, while employing a browser agnostic approach to modify the data locally. This approach removes the need to add third party extensions to the browser, and provides a single solution that works across all environments. 
+Our approach builds on the existing research to date, but uses the browser agnostic approach of creating a local redirect file with a custom icon. This approach removes the need to add third party extensions to the browser, and provides a single solution that works across all environments. 
 
 The proposed solution uses a HTML redirect with a custom `<link>` element. 
 
@@ -68,33 +68,36 @@ A complete example is shown below:
 
 To test the proposed approach, we created a small tool for Windows - Favman - which allows you to easily create HTML bookmark files with custom icons. A screenshot is shown below.
 
-![Create a bookmark using a custom icon with Favman](/assets/images/screenshot2.png)
+![Create a bookmark using a custom icon with Favman](/assets/images/2024-12-30-customizing-favicons-1.png)
 
-![Example bookmark with custom icon](/assets//images/screenshot3.png)
+![Example bookmark with custom icon](/assets/images/2024-12-30-customizing-favicons-2.png)
 
 Enter a title, URL and icon file, click `Create` and Favman will generate the custom bookmark. Output files are saved to the `%APPDATA%\Favman\Bookmarks` directory. The bookmark will be automatically opened in the default browser if the `Open bookmark` checkbox is enabled. 
 
-When the page is launched, there is a default timeout of 5 seconds before the redirect occurs. This is to allow time for the user to bookmark the page. You can press `Ctrl + D` to quickly bookmark the current page in the browser before the page is redirected.
+When the bookmark is opened, there is a default timeout of 5 seconds before the redirect occurs. This is to allow time for the user to bookmark the page. You can press `Ctrl + D` to quickly bookmark the page before the redirect occurs.
 
 The application is available on the project GitHub page [here](https://github.com/dmaccormac/favman).
 
 ## Limitations
 
-There are some inherent limitations to this approach. Once the redirect is completed the default icon will be displayed in the window title bar. Adjusting the default timeout of five seconds requires some technical capabilities which could pose a challenge for some users. While the redirect timeout can be minimized by editing the HTML file, the redirect page will still be briefly visible to the end user.   
+There are some inherent limitations to this approach. 
+- Once the custom bookmark item completes the redirect action, the favicon of the target site will be displayed in the tab title bar. 
+- Adjusting the redirect timeout requires some technical capabilities which could pose a challenge for some users. 
+- While the timeout can be set to the minimum value by editing the HTML file, the redirect page will still be briefly visible to the end user.   
 
 ## Further work
 
- Initial testing highlighted several areas with opportunities for improvement. This implementation lays the groundwork for future developments such as support for multiple icon sizes and formats, ability to modify existing items, and adding more granular customization options. 
+ Initial testing highlighted several areas with opportunities for improvement. This implementation lays the groundwork for future developments such as support for multiple icon sizes and formats, the ability to modify existing items, and adding more granular customization options. 
 
 # Conclusion
 
-Visual aids are indispensable in the design of accessible digital interfaces, particularly for users with disabilities. Icons, colors, contrast, and structured layouts can make systems more intuitive, reduce cognitive load, and support diverse interaction methods. Incorporating these elements into designs not only fosters inclusivity but also improves the overall user experience. Testing the proposed solution using the Favman implementation demonstrated that this approach provides a viable solution, albeit with some inherent limitations.
+Visual aids are indispensable in the design of accessible digital interfaces, particularly for users with disabilities. Icons, colors, contrast, and structured layouts can make systems more intuitive, reduce cognitive load, and support diverse interaction methods. Incorporating these elements into designs not only improves accessibility but also enhances the overall user experience. Testing the proposed solution using the Favman implementation demonstrated that this approach provides a viable solution, with some inherent limitations.
 
 # References
 
 [[1] M. Zhang, Y. Gong, R. Deng, and S. Zhang, “The effect of color coding and layout coding on users’ visual search on mobile map navigation icons,” Frontiers in Psychology, vol. 13, Dec. 2022, doi: https://doi.org/10.3389/fpsyg.2022.1040533.](https://doi.org/10.3389/fpsyg.2022.1040533)
 
-[[2] Sara Hamideh Kerdar, L. Bächler, and Britta Marleen Kirchhoff, “The accessibility of digital technologies for people with visual impairment and blindness: a scoping review,” Deleted Journal, vol. 27, no. 1, Aug. 2024, doi: https://doi.org/10.1007/s10791-024-09460-7.](https://doi.org/10.1007/s10791-024-09460-7)
+[[2] Sara Hamideh Kerdar, L. Bächler, and Britta Marleen Kirchhoff, “The accessibility of digital technologies for people with visual impairment and blindness: a scoping review,” Discov Computing, vol. 27, no. 1, Aug. 2024, doi: https://doi.org/10.1007/s10791-024-09460-7.](https://doi.org/10.1007/s10791-024-09460-7)
 
 [[3] S. Shethia and A. A. Techatassanasoontorn, “Experiences of People with Visual Impairments in Accessing Online Information and Services: A Systematic Literature Review,” Pacific Asia Journal of the Association for Information Systems, pp. 39–66, 2019, doi: https://doi.org/10.17705/1pais.11203.](https://doi.org/10.17705/1pais.11203)
 
