@@ -1,7 +1,7 @@
 ---
 title: A browser agnostic approach to customizing favorite icons
-date: 2024-11-30
-last_modified_at: 2024-11-30
+date: 2024-12-30
+last_modified_at: 2024-12-30
 tags: web accessibility favicon favman
 excerpt: Favman is a tool to easily create HTML bookmark files with custom icons.
 ---
