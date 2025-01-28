@@ -1,7 +1,7 @@
 ---
 title: How to improve C++ application portability
 date: 2025-01-27
-last_modified_at: 2025-01-27
+last_modified_at: 2025-01-28
 tags: c++ programming portability 
 excerpt: Practical steps to support application portability across Windows versions
 ---
@@ -50,24 +50,8 @@ Example `resource.h` file:
 
 ## Extract resources
 
-1.	Find the Resource:
-	- FindResource locates the resource with the specified ID (resourceId) and type (RT_RCDATA).
-	- If the resource is not found, the function returns false.
-2.	Load the Resource:
-    -	LoadResource loads the specified resource into memory.
-    -	If the resource cannot be loaded, the function returns false.
-3.	Lock the Resource:
-    - LockResource locks the resource in memory, returning a pointer to the resource data.
-    - SizeofResource retrieves the size of the resource.
-    - If the resource cannot be locked or its size is zero, the function returns false.
-4.	Write the Resource to a File:
-    - An std::ofstream is used to write the resource data to the specified output file (outputPath).
-    - The resource data is written in binary mode.
-    - The file is then closed.
-5.	Return Success:
-    - If all steps are successful, the function returns true.
 
-The complete code for the `extractResource` function is shown below.
+To extract embedded resources at runtime, we can use the `extractResource` function as shown below.
 
 ```cpp
 bool extractResource(int resourceId, const std::string& outputPath) {
@@ -89,7 +73,7 @@ bool extractResource(int resourceId, const std::string& outputPath) {
 }
 ```
 
-You can call the `extractResource` function as follows:
+An example call to `extractResource` function:
 
 ```cpp
    std::string outFile = myPath + "foo.exe";
@@ -99,10 +83,28 @@ You can call the `extractResource` function as follows:
    }
 ```
 
-# Statically link runtime libraries
-Statically linking run time libraries minimizes reliance on external installations. To make your application truly portable, you can statically link the C++ runtime library so that the required DLLs are included in your executable.
+Let's examine each step of the `extractResource` function in more detail. 
 
-For example, a common error `msvcp140.dll was not found` indicates that the Microsoft Visual C++ Redistributable is not installed on the target machine.
+1.	Find the Resource:
+	- FindResource locates the resource with the specified ID (resourceId) and type (RT_RCDATA).
+	- If the resource is not found, the function returns false.
+2.	Load the Resource:
+    -	LoadResource loads the specified resource into memory.
+    -	If the resource cannot be loaded, the function returns false.
+3.	Lock the Resource:
+    - LockResource locks the resource in memory, returning a pointer to the resource data.
+    - SizeofResource retrieves the size of the resource.
+    - If the resource cannot be locked or its size is zero, the function returns false.
+4.	Write the Resource to a File:
+    - An std::ofstream is used to write the resource data to the specified output file (outputPath).
+    - The resource data is written in binary mode.
+    - The file is then closed.
+5.	Return Success:
+    - If all steps are successful, the function returns true.
+
+
+# Statically link runtime libraries
+Sometimes when you attempt to run your application on another computer, you might receive runtime error messages mentioning missing DLL files. For example, the error message `msvcp140.dll was not found` indicates that the Microsoft Visual C++ Redistributable is not installed on the target machine. Statically linking run time libraries minimizes reliance on such dependencies.
 
 Here are the steps to statically link the C++ runtime library in Visual Studio 2022:
 
@@ -143,7 +145,7 @@ Utilize environment variables for configuration settings, allowing the applicati
 Provide clear documentation for your application, specifying any system requirements and detailed instructions for deployment on different Windows versions.
 
 # Conclusion
-In conclusion, mastering application portability techniques is crucial for ensuring seamless operation across different Windows versions. By embedding necessary resources and including runtime libraries within the application, developers can create self-contained executables that minimize dependency issues and simplify the deployment process. This approach not only enhances user experience by reducing compatibility problems but also streamlines maintenance and updates, ultimately fostering a more efficient and robust software ecosystem. Embracing these practices helps developers deliver reliable and versatile applications that can adapt to the diverse Windows environment.
+In conclusion, mastering application portability techniques is crucial for ensuring seamless operation across different Windows versions. By embedding necessary resources and including runtime libraries within the application, developers can create self-contained executables that minimize dependency issues and simplify the deployment process. This approach not only enhances user experience by reducing compatibility problems but also streamlines maintenance and updates, ultimately fostering a more efficient and robust software ecosystem. Embracing these practices helps developers to deliver reliable and versatile applications that can adapt to diverse Windows environments.
 
 # References
 [[1] RCDATA resource - Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/menurc/rcdata-resource)
