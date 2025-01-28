@@ -1,6 +1,6 @@
 ---
 title: How to improve C++ application portability
-date: 2025-01-26
+date: 2025-01-27
 last_modified_at: 2025-01-27
 tags: c++ programming portability 
 excerpt: Practical steps to support application portability across Windows versions
