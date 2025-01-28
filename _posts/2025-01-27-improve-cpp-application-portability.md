@@ -118,28 +118,28 @@ After following these steps, your application should no longer depend on externa
 # Best coding practices 
 Below is a short list of suggested best practices to consider when building applications with a focus on portability. 
 
-#### Static Linking
+## Static Linking
 Whenever possible, use static linking to include all necessary libraries and dependencies within your executable. This minimizes reliance on external installations.
 
-#### Avoid Platform-Specific Code
+## Avoid Platform-Specific Code
 Write code that adheres to standard C++ practices and avoids using platform-specific features unless absolutely necessary. If platform-specific code is unavoidable, use conditional compilation to handle different environments.
 
-#### Runtime Checks
+## Runtime Checks
 Implement runtime checks to determine the operating system version and adapt the application's behavior accordingly. This ensures compatibility with various Windows versions.
 
-#### Keep Dependencies Updated
+## Keep Dependencies Updated
 Regularly update all third-party libraries and dependencies to their latest versions to benefit from improved portability and security fixes.
 
-#### Modular Design
+## Modular Design
 Structure your codebase using a modular design approach, making it easier to isolate and manage specific components.
 
-#### Comprehensive Testing
+## Comprehensive Testing
 Test your application on multiple Windows versions and configurations to identify and resolve compatibility issues before deployment.
 
-#### Use Environment Variables
+## Use Environment Variables
 Utilize environment variables for configuration settings, allowing the application to adjust its behavior based on the runtime environment without requiring hard-coded paths.
 
-#### Clear Documentation
+## Clear Documentation
 Provide clear documentation for your application, specifying any system requirements and detailed instructions for deployment on different Windows versions.
 
 # Conclusion
