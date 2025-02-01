@@ -137,10 +137,13 @@ author:
       url: "https://signal.me/#eu/J1x_rA5zx1sYIdqgNhcE4PSQ759uDFAfthWHSGuBJ2Go90xexCNO4b6un5qWvH4R"
     - label: "Bluesky"
       icon: "fab fa-fw fa-square-bluesky"
-      url: "https://bsky.app/profile/danmaccormac.bsky.social"
+      # url: "https://bsky.app/profile/danmaccormac.bsky.social"
     - label: "Twitter"
       icon: "fab fa-fw fa-square-x-twitter"
-      url: "https://x.com/danmaccormac"
+      #url: "https://x.com/danmaccormac"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/29412251/dmaccormac"
 
 # Site Footer
 footer:
