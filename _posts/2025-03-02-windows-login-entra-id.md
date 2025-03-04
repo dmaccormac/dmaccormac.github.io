@@ -45,23 +45,18 @@ Below are the steps required to join your device to Entra ID after Windows setup
 1. Click on the **Start menu**, then select **Settings**.
 
 2. In the Settings window, select **Accounts**.
-
 ![Windows Login Entra ID Image 1](/assets/images/2025-03-02-windows-login-entra-id-1.png)
 
 3. Under the **Accounts** section, click **Access Work or School**. 
-
 ![Windows Login Entra ID Image 2](/assets/images/2025-03-02-windows-login-entra-id-2.png)
 
 4. If you have any work address listed here, disconnect it and restart the computer. Come back to this page, click on **Connect**.
-
 ![Windows Login Entra ID Image 3](/assets/images/2025-03-02-windows-login-entra-id-3.png)
 
 5. Don't sign into your work email yet. Instead, click on "Join this device to Microsoft Entra ID".
-
 ![Windows Login Entra ID Image 4](/assets/images/2025-03-02-windows-login-entra-id-4.png)
 
 6. Follow the on-screen instructions to complete the setup process.
-
 ![Windows Login Entra ID Image 5](/assets/images/2025-03-02-windows-login-entra-id-5.png)
 
 
