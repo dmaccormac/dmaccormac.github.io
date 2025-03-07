@@ -70,9 +70,9 @@ Follow these steps to connect to the MVS system using wc3270:
 **Note**
 If the text appears garbled or unreadable, try maximizing the wc3270 window to adjust the display settings. This issue can occur due to the default font size or window dimensions.
 
-- Enter `HERC01` as the username and press Enter.
-- Enter the default password ```CUL8TR```and press Enter.
-- Hit Enter a couple of times to bypass the initial messages.
+- Type `HERC01` for the username and press Enter.
+- Type the default password ```CUL8TR```and press Enter.
+- Hit Enter key a couple of times to bypass the initial messages.
 - You should now see the ISPF screen as shown below.
   
 ![Emulate your own mainframe 3](/assets/images/2025-03-06-emulate-your-own-mainframe-3.png)
@@ -84,7 +84,7 @@ If the text appears garbled or unreadable, try maximizing the wc3270 window to a
 
 To test a COBOL program, follow these steps:
 
-From the main ISPF menu, Hit M to access TSOAPPLS.
+From the ISPF main menu, select M to access TSOAPPLS.
 ![Emulate your own mainframe 4](/assets/images/2025-03-06-emulate-your-own-mainframe-4.png)
 
 Select option 1 to access the RFE (Review Front End) tool. 
@@ -93,7 +93,7 @@ Select option 1 to access the RFE (Review Front End) tool.
 Select option 3 to access Utilites.
 ![Emulate your own mainframe 6](/assets/images/2025-03-06-emulate-your-own-mainframe-6.png)
 
-Select option 4 to access DSLIST (Data set List). 
+Select option 4 to access DSLIST (data set list). 
 ![Emulate your own mainframe 7](/assets/images/2025-03-06-emulate-your-own-mainframe-7.png)
 
 Type ```SYS2``` for ```Data set name prefix``` and hit Enter.
