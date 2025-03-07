@@ -1,5 +1,5 @@
 ---
-title: How to emulate your own mainframe computer
+title: Emulate your own mainframe computer using MVS-TK5 and Hercules
 date: 2025-03-06
 last_modified_at: 2025-03-06
 tags: mainframe ibm hercules mvs-tk5
