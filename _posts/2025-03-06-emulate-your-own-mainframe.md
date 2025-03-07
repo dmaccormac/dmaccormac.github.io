@@ -1,5 +1,5 @@
 ---
-title: Emulate your own mainframe computer using MVS-TK5 and Hercules
+title: Emulate your own mainframe computer with MVS-TK5
 date: 2025-03-06
 last_modified_at: 2025-03-06
 tags: mainframe ibm hercules mvs-tk5
@@ -62,7 +62,7 @@ Once the MVS system is up and running, you can access it using a terminal emulat
 Follow these steps to connect to the MVS system using wc3270:
 
 - Download and install wc3270 from [here](http://x3270.bgp.nu/).
-- Open wc3270, type ```open localhost:3270``` and hit Enter.
+- Launch wc3270, type ```open localhost:3270``` and hit Enter.
 - You should now see the mainframe login screen as shown below.
   
 ![Emulate your own mainframe 2](/assets/images/2025-03-06-emulate-your-own-mainframe-2.png)
