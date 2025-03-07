@@ -25,11 +25,11 @@ The combination of Hercules and MVS-TK5 offers an accessible way to learn about 
 
 Here's a step-by-step guide to setting up MVS-TK5 with Hercules on your computer:
 
-1. Download the MVS-TK5 Package
+(1) Download the MVS-TK5 Package
 
 You can download the MVS-TK5 package [here](https://www.prince-webdesign.nl/tk5).
 
-2. Extract the Files
+(2) Extract the Files
 
 Unzip the downloaded package to a directory of your choice. The `mvs-tk5` folder will typically contain:
 
@@ -37,7 +37,7 @@ Unzip the downloaded package to a directory of your choice. The `mvs-tk5` folder
    - MVS-TK5 system files, including DASD (Direct Access Storage Device) images.
    - Configuration files and documentation.
 
-3. Boot the MVS System
+(3) Boot the MVS System
 
 Start MVS by executing the batch or script file provided in the package - `mvs.bat` on Windows or `mvs` shell script on Linux or macOS.
 
@@ -84,45 +84,36 @@ If the text appears garbled or unreadable, try maximizing the wc3270 window to a
 
 To test a COBOL program, follow these steps:
 
-- From the main ISPF menu, Hit M to access TSOAPPLS.
- 
+From the main ISPF menu, Hit M to access TSOAPPLS.
 ![Emulate your own mainframe 4](/assets/images/2025-03-06-emulate-your-own-mainframe-4.png)
 
-- Select option 1 to access the RFE (Review Front End) tool.
-  
+Select option 1 to access the RFE (Review Front End) tool. 
 ![Emulate your own mainframe 5](/assets/images/2025-03-06-emulate-your-own-mainframe-5.png)
 
-- Select option 3 to access Utilites.
-  
+Select option 3 to access Utilites.
 ![Emulate your own mainframe 6](/assets/images/2025-03-06-emulate-your-own-mainframe-6.png)
 
-- Select option 4 to access DSLIST (Data set List). 
-
+Select option 4 to access DSLIST (Data set List). 
 ![Emulate your own mainframe 7](/assets/images/2025-03-06-emulate-your-own-mainframe-7.png)
 
-- Type ```SYS2``` for ```Data set name prefix``` and hit Enter.
-
+Type ```SYS2``` for ```Data set name prefix``` and hit Enter.
 ![Emulate your own mainframe 8](/assets/images/2025-03-06-emulate-your-own-mainframe-8.png)
 
-- Use the down arrow key to navigate to ```SYS2.JCLIB```, press V, then hit Enter to view the data set.
-
+Use the down arrow key to navigate to ```SYS2.JCLIB```, press V, then hit Enter to view the data set.
 ![Emulate your own mainframe 9](/assets/images/2025-03-06-emulate-your-own-mainframe-9.png)
   
-- Use the F8 key to scroll down. Find the sample COBOL program called ```TESTCOB```. Press the V key, then press Enter to view the file. 
+Use the F8 key to scroll down. Find the sample COBOL program called ```TESTCOB```. Press the V key, then press Enter to view the file. 
+![Emulate your own mainframe 10](/assets/images/2025-03-06-emulate-your-own-mainframe-10.png)
 
- ![Emulate your own mainframe 10](/assets/images/2025-03-06-emulate-your-own-mainframe-10.png)
-- Type ```SUBMIT``` in the Command field, then hit Enter. 
-
+Type ```SUBMIT``` in the Command field, then hit Enter. 
  ![Emulate your own mainframe 11](/assets/images/2025-03-06-emulate-your-own-mainframe-11.png)
 
-- You should see the output of the COBOL program in the ```Hercules - System Status``` window, shown on the left hand side.
- 
+You should see the output of the COBOL program in the ```Hercules - System Status``` window, shown on the left hand side.
 ![Emulate your own mainframe 12](/assets/images/2025-03-06-emulate-your-own-mainframe-12.png)
 
 # Conclusion
 
-Setting up MVS-TK5 with Hercules isn't just a technical exercise; it's an opportunity to engage with a pivotal era of computing history. By following these steps, you can build your own mainframe environment and gain valuable insights into the world of enterprise computing.
-For further exploration, you can check out the documentation included with MVS-TK5.
+Emulating a mainframe with MVS-TK5 and Hercules provides an easy way to explore the architecture and operations of a traditional IBM mainframe system. By following the setup process, you gain a functional environment to experiment with JCL, TSO, ISPF, and legacy programming languages like COBOL. This hands-on experience offers valuable insights into the foundational technologies that continue to influence modern enterprise computing. For further exploration, you can check out the documentation included with MVS-TK5.
 
 # References
 
@@ -139,6 +130,7 @@ For further exploration, you can check out the documentation included with MVS-T
 [[6] Using the function keys and command line with the ISPF control panels on z/OS](https://www.ibm.com/docs/en/ibm-mq/9.4?topic=uocpz-using-function-keys-command-line-ispf-control-panels-zos)
 
 # Appendix
+
 ```/s shutdown``` to shutdown system from Hercules status window
 
 ```logon herc01 recon``` to reconnect to existing session
