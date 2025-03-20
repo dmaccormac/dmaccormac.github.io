@@ -35,14 +35,14 @@ It is based on the GnuCOBOL 3.2 BDB package by Arnold Trembley [1].
 For other versions and platforms, you can visit the GnuCOBOL Project on SourceForge [2].
 
 
-# VSCode Extension
-If you use Visual Studio Code, you can add the COBOL extension to enable language support. Go to the Extensions tab, search for "COBOL" and install the extension provided by bitlang.
+# VSCode Extensions
+If you use Visual Studio Code, you can install a COBOL extension to enable language support. Open Visual Studio Code, go to the Extensions tab, and search for "COBOL". I recommend either COBOL by BitLang [3] or COBOL Language Support by Broadcom [4]. In my experience, the latter appears to provide better formatting support.  
 
 
 # Example COBOL Program
 Create `hello.cob` file with the example code shown below:
 
-```cobol
+```
 IDENTIFICATION DIVISION.
 PROGRAM-ID. HELLO-WORLD.   
 PROCEDURE DIVISION.
@@ -91,44 +91,46 @@ Setting up a COBOL development environment on Windows allows you to write, compi
 
 [[1] GnuCOBOL/OpenCOBOL Downloads, Binaries, and Links - Arnold Trembley](https://www.arnoldtrembley.com/GnuCOBOL.htm)
 
-
 [[2] GnuCOBOL Project on SourceForge](https://sourceforge.net/projects/gnucobol/)
 
+[[3] Visual Studio Marketplace - COBOL (BitLang)](https://marketplace.visualstudio.com/items?itemName=bitlang.cobol)
+
+[[4] Visual Studio Marketplace - COBOL Language Support (Broadcom)](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.cobol-language-support)
 
 # Appendix
 
 ## Sample program with variables
 
-```cobol
-IDENTIFICATION DIVISION.
-PROGRAM-ID. SAMPLE-PROGRAM.
-DATA DIVISION.
-WORKING-STORAGE SECTION.
-01 WS-NAME PIC X(20) VALUE 'John Doe'.
-01 WS-AGE PIC 99 VALUE 30.
-PROCEDURE DIVISION.
-DISPLAY 'Name: ' WS-NAME.
-DISPLAY 'Age: ' WS-AGE.
-STOP RUN.
+```
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. SAMPLE-PROGRAM.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WS-NAME PIC X(20) VALUE 'John Doe'.
+       01 WS-AGE PIC 99 VALUE 30.
+       PROCEDURE DIVISION.
+           DISPLAY 'Name: ' WS-NAME.
+           DISPLAY 'Age: ' WS-AGE.
+           STOP RUN.
 ```
 
 ## Sample program with user input
 
-```cobol
-IDENTIFICATION DIVISION.
-PROGRAM-ID. READ-USER-INPUT.
-DATA DIVISION.
-WORKING-STORAGE SECTION.
-01 WS-NAME PIC X(20).
-01 WS-AGE PIC 99.
-PROCEDURE DIVISION.
-DISPLAY 'Enter your name: '.
-ACCEPT WS-NAME.
-DISPLAY 'Enter your age: '.
-ACCEPT WS-AGE.
-DISPLAY 'Name: ' WS-NAME.
-DISPLAY 'Age: ' WS-AGE.
-STOP RUN.
+```
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. READ-USER-INPUT.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WS-NAME PIC X(20).
+       01 WS-AGE PIC 99.
+       PROCEDURE DIVISION.
+           DISPLAY 'Enter your name: '.
+           ACCEPT WS-NAME.
+           DISPLAY 'Enter your age: '.
+           ACCEPT WS-AGE.
+           DISPLAY 'Name: ' WS-NAME.
+           DISPLAY 'Age: ' WS-AGE.
+           STOP RUN.
 ```
 
 
