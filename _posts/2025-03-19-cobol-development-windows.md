@@ -25,7 +25,7 @@ Some key features of COBOL include:
 - Strong Numeric Capabilities: It provides robust support for precise arithmetic and handling of monetary data, crucial for banking and financial applications.
 
 
-# Install GnuCOBOL Compiler for Windows
+# GnuCOBOL Compiler
 I've created an installer package for GnuCOBOL for Windows which you can download [here](/assets/uploads/GnuCOBOL.exe).
 
 The packages installs the compiler to the `C:\Program Files\GnuCOBOL` directory and sets the necessary environment variables.
@@ -35,11 +35,11 @@ It is based on the GnuCOBOL 3.2 BDB package by Arnold Trembley [1].
 For other versions and platforms, you can visit the GnuCOBOL Project on SourceForge [2].
 
 
-# Install COBOL Extension for Visual Studio Code
-If you use VSCode, you can add the COBOL extension to enable language support. Go to the Extensions, search for "COBOL" and install the extension provided by bitlang.
+# VSCode Extension
+If you use Visual Studio Code, you can add the COBOL extension to enable language support. Go to the Extensions tab, search for "COBOL" and install the extension provided by bitlang.
 
 
-# Write a COBOL Program
+# Example COBOL Program
 Create `hello.cob` file with the example code shown below:
 
 ```cobol
@@ -51,7 +51,8 @@ PROCEDURE DIVISION.
 ```
 
 
-# Compile and Run the COBOL Program
+# Compile and Run
+To compile and run the COBOL program, follow these steps:
 
 ## 1. Set environment variables
 
@@ -133,6 +134,6 @@ STOP RUN.
 - `GNUCobol\GnuCOBOL 3.2 Manual.pdf`
 - `GNUCobol\docs`
 
-# Resources
+## Resources
 
 Beginning COBOL for Programmers by Michael Coughlan. ISBN: 978-1430262534
