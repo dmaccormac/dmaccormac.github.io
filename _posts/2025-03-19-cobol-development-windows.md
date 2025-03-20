@@ -3,7 +3,7 @@ title: Setup COBOL Development Environment on Windows
 date: 2025-03-19
 last_modified_at: 2025-03-19
 tags: cobol windows development
-excerpt: Learn how to set up GnuCOBOL for Windows and compile a sample application.
+excerpt: Learn how to set up GnuCOBOL for Windows and compile an example program.
 ---
 
 # Introduction
@@ -51,16 +51,20 @@ PROCEDURE DIVISION.
 ```
 
 
-# Compile and Run
+# How to Compile and Run
 To compile and run the COBOL program, follow these steps:
 
 ## 1. Set environment variables
 
-Open a terminal and run the `cob` command.
+Open a terminal and run the the following command:
 
-This sets **non persistent** environment variables for GnuCOBOL. 
+```bash
+cob
+```
 
-`Note: cob is an alias for set_env.cmd file in GNUCobol directory.`
+This sets non persistent environment variables for GnuCOBOL. 
+
+Note: `cob` is an alias for `set_env.cmd` file in GNUCobol directory.
 
 ## 2. Compile program
 Navigate to the directory containing your COBOL program and run the following command:
@@ -136,4 +140,4 @@ STOP RUN.
 
 ## Resources
 
-Beginning COBOL for Programmers by Michael Coughlan. ISBN: 978-1430262534
+Beginning COBOL for Programmers by Michael Coughlan (ISBN: 978-1430262534)
