@@ -26,6 +26,8 @@ Some key features of COBOL include:
 
 
 # GnuCOBOL Compiler
+GnuCOBOL (formerly known as OpenCOBOL) is an open-source COBOL compiler that supports modern COBOL standards and is actively maintained by the community. It provides a free and open-source toolchain for developing COBOL applications on various platforms, including Windows.
+
 I've created an installer package for GnuCOBOL for Windows which you can download [here](/assets/uploads/GnuCOBOL.exe).
 
 The packages installs the compiler to the `C:\Program Files\GnuCOBOL` directory and sets the necessary environment variables.
@@ -43,11 +45,11 @@ If you use Visual Studio Code, you can install a COBOL extension to enable langu
 Create `hello.cob` file with the example code shown below:
 
 ```
-IDENTIFICATION DIVISION.
-PROGRAM-ID. HELLO-WORLD.   
-PROCEDURE DIVISION.
-    DISPLAY 'Hello, World!'.
-    STOP RUN.
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID. HELLO-WORLD.   
+        PROCEDURE DIVISION.
+            DISPLAY 'Hello, World!'.
+            STOP RUN.
 ```
 
 
