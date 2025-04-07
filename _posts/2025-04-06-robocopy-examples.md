@@ -15,7 +15,7 @@ This guide provides examples of how to use Robocopy effectively. It covers basic
 
 
 # Basic Syntax
-```bash
+```bat
 robocopy <source> <destination> [options]
 ```
 
@@ -50,7 +50,7 @@ Robocopy is a powerful tool with many options, and it can be used in various sce
 ## Example #1: Default copy
 This is the simplest form of the Robocopy command, which copies files only from one location to another without any additional options. It uses the default parameters:
 
-```bash
+```bat
 robocopy C:\Source D:\Destination
 ```
 
@@ -67,7 +67,7 @@ Even when you provide the bare minimum, Robocopy still includes several paramete
 ## Example #2: Basic Copy
 The above command is useful for copying files, but it may not be sufficient for more complex tasks. For example, if you want to copy all files and subdirectories from `C:\Source` to `D:\Destination`, you can use the `/S` option to include sub directories. You can also use the `/E` option to include empty directories:
 
-```bash
+```bat
 robocopy C:\Source D:\Destination /E /DCOPY:DAT /COPY:DAT /R:3 /W:5
 ```
 
@@ -77,7 +77,7 @@ I've also added the `/R` and `/W` options to specify the number of retries and w
 ## Example #3: Multi threaded Copy
 Robocopy supports multi-threaded copying, which can significantly speed up the process when dealing with large files or directories. By default, Robocopy uses 8 CPU threads when copying files. You can use the `/MT` parameter to specify the use of more CPU threads.
 
-```bash
+```bat
 robocopy C:\Source D:\Destination /E /DCOPY:DAT /COPY:DAT /R:3 /W:5 /MT:16
 ```
 
@@ -92,7 +92,7 @@ Robocopy can be used to monitor backups by using the `/MON` and/or `/MOT` option
 `/MON:n` Monitor source; run again when more than n changes seen.
 `/MOT:m` Monitor source; run again when more than m minutes have passed.
 
-```bash
+```bat
 robocopy C:\Source D:\Destination /E /MON:10 /MOT:30
 ```
 
@@ -106,7 +106,7 @@ However, be cautious when using this option, as it can lead to data loss if not 
 
 Below is an example of using the `/MIR` option to create a mirror copy of a directory:
 
-```bash
+```bat
 robocopy C:\Source D:\Destination /MIR /B /R:0 /COPYALL /DCOPY:DAT /XD '$Recycle.bin' 'System Volume Information' /XF 'thumbs.db' /MT:16 /NP /LOG:'C:\Users\Dan\Desktop\robocopy.log' 
 ```
 
@@ -137,5 +137,3 @@ Robocopy is a powerful and flexible tool for copying files and directories in Wi
 [[3] Robocopy command for making an exact copy](https://www.reddit.com/r/sysadmin/comments/z0wzod/robocopy_command_for_making_an_exact_copy/)
 
 [[4] 21 Robocopy Examples With Screenshots](https://activedirectorypro.com/robocopy-examples/)
-    
-[[5] Robocopy: The Ultimate Guide](https://www.windowscentral.com/robocopy-ultimate-guide)
