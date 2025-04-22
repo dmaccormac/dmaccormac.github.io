@@ -9,7 +9,7 @@ excerpt: A guide to privacy settings on iPhone for better security and data prot
 # Introduction
 iPhones are known for their robust security features [[1]](#references), however the sheer number of settings available can make exploring and understanding these features challenging. 
 
-This guide outlines a collection of privacy and security settings to consider. There is no one-size-fits-all collection of recommended settings - the best settings for you depend on your personal preferences and how you use your iPhone [[[2]](#references)].
+This guide outlines a collection of privacy and security settings to consider. There is no one-size-fits-all collection of recommended settings - the best settings for you depend on your personal preferences and how you use your iPhone [[2]](#references).
 
 
 # Essential Settings
@@ -132,7 +132,7 @@ You can also disable iCloud backups entirely by toggling off **iCloud Backup**.
 Siri has access to various data on your iPhone, including contacts, messages, and location. To limit Siri's access to your data, you can adjust its settings:
 
 1. Go to **Settings** > **Siri**.
-2. Under **Siri App Access**, click on **Apps**, and disable any apps you don't want Siri to access [hobbit-hole][5].
+2. Under **Siri App Access**, click on **Apps**, and disable any apps you don't want Siri to access.
 
 
 # Conclusion
@@ -147,4 +147,3 @@ By following these steps, you can significantly enhance the privacy and security
 
 [[4] How to: Enable Lockdown Mode on iPhone](https://ssd.eff.org/module/how-to-enable-lockdown-mode-on-iphone).
 
-[5]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
