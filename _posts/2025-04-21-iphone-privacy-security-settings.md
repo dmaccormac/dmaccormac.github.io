@@ -7,7 +7,10 @@ excerpt: A guide to privacy settings on iPhone for better security and data prot
 ---
 
 # Introduction
-iPhones are known for their robust security features, but there are still several settings you can adjust to enhance your privacy and security. This guide will walk you through suggested steps to improve your iPhone's privacy settings, ensuring that your personal data is better protected. 
+iPhones are known for their robust security features [[1]](#references), however the sheer number of settings available can make exploring and understanding these features challenging. 
+
+This guide outlines a collection of privacy and security settings to consider. There is no one-size-fits-all collection of recommended settings - the best settings for you depend on your personal preferences and how you use your iPhone [[[2]](#references)].
+
 
 # Essential Settings
 
@@ -50,7 +53,7 @@ Find My iPhone helps you locate your device if it's lost or stolen. To enable it
 2. Tap **Find My iPhone** and toggle it on.
 3. Optionally, enable **Send Last Location** to automatically send the last known location of your iPhone when the battery is low.
 
-Once enabled, if you lose a device or it’s stolen, you can find it on a map, or more importantly, remotely wipe its contents [2].
+Once enabled, if you lose a device or it’s stolen, you can find it on a map, or more importantly, remotely wipe its contents [[3]](#references).
 
 ## Enable Stolen Device Protection
 Stolen Device Protection is designed specifically for situations where someone steals your phone and knows your passcode. This can happen if you’ve shared your passcode with someone, or if a person looks over your shoulder when you unlock your phone.
@@ -79,7 +82,7 @@ Note that enabling this feature may require you to set up a recovery key or reco
 
 
 ## Lockdown Mode
-Lockdown Mode is an extreme security feature designed to protect against cyber attacks. When Lockdown Mode is enabled, apps, websites and funtionalities will be limited and some features will be disabled completely.  
+Lockdown Mode [[4]](#references) is an extreme security feature designed to protect against cyber attacks. When Lockdown Mode is enabled, apps, websites and funtionalities will be limited and some features will be disabled completely.  
 
 To enable Lockdown Mode:
 1. Go to **Settings** > **Privacy & Security** > **Lockdown Mode**.
@@ -129,15 +132,19 @@ You can also disable iCloud backups entirely by toggling off **iCloud Backup**.
 Siri has access to various data on your iPhone, including contacts, messages, and location. To limit Siri's access to your data, you can adjust its settings:
 
 1. Go to **Settings** > **Siri**.
-2. Under **Siri App Access**, click on **Apps**, and disable any apps you don't want Siri to access.
+2. Under **Siri App Access**, click on **Apps**, and disable any apps you don't want Siri to access [hobbit-hole][5].
 
 
 # Conclusion
 By following these steps, you can significantly enhance the privacy and security of your iPhone. Regularly review your settings and stay informed about new features and updates to ensure that your device remains secure. Remember that privacy is an ongoing process, and it's essential to stay vigilant in protecting your personal information.
 
 # References
-[[1] How to: Get to Know iPhone Privacy and Security Settings](https://ssd.eff.org/module/how-to-get-to-know-iphone-privacy-and-security-settings)
+[[1] Apple Platform Security](https://support.apple.com/guide/security/welcome/web)
 
-[[2] Use Find My to locate your lost Apple device or AirTag](https://support.apple.com/en-us/104978)
+[[2] How to: Get to Know iPhone Privacy and Security Settings](https://ssd.eff.org/module/how-to-get-to-know-iphone-privacy-and-security-settings)
 
-[[3] How to: Enable Lockdown Mode on iPhone](https://ssd.eff.org/module/how-to-enable-lockdown-mode-on-iphone).
+[[3] Use Find My to locate your lost Apple device or AirTag](https://support.apple.com/en-us/104978)
+
+[[4] How to: Enable Lockdown Mode on iPhone](https://ssd.eff.org/module/how-to-enable-lockdown-mode-on-iphone).
+
+[5]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
