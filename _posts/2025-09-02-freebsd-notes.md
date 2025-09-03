@@ -1,5 +1,5 @@
 ---
-title: Some FreeBSD notes
+title: FreeBSD config notes
 date: 2025-09-02
 last_modified_at: 2025-09-02
 tags: freebsd unix
@@ -9,7 +9,32 @@ excerpt: Just documenting some useful FreeBSD commands.
 
 Just documenting some useful FreeBSD commands.
 
-# 1. Enable SSH
+
+# 1. Adding a user
+
+## Option 1: adduser (interactive)
+
+```bash
+adduser
+```
+
+This will launch an interactive prompt asking for username, groups, shell, home dir, etc.
+
+
+## Option 2: Using pw (scriptable)
+
+```bash
+pw useradd <username> -m -s /bin/sh -G wheel
+```
+
+Then set the password:
+
+```bash
+passwd <username>
+```
+
+## Option 2: 
+# 2. Enable SSH
 
 ## 1. Install OpenSSH (if not already installed)
 
@@ -36,17 +61,16 @@ sshd_enable="YES"
 You can do this with:
 
 ```bash
-sshd_enable="YES"
+sysrc sshd_enable=YES
 ```
 
 ## 3. Start SSH Service
 Start the SSH daemon immediately:
 
 ```bash
-sudo service sshd start
+service sshd start
 
 ```
-
 
 ## 4. Check Firewall (if applicable)
 Ensure port 22 is open if you're using pf or another firewall.
@@ -60,14 +84,14 @@ pass in on egress proto tcp from any to any port 22
 Then reload:
 
 ```bash
-sudo pfctl -f /etc/pf.conf
+pfctl -f /etc/pf.conf
 ```
 
-## Verify SSH is Running
+## 5. Verify SSH is Running
 Check status:
 
 ```bash
-sudo service sshd status
+service sshd status
 ```
 
 Or check listening port:
