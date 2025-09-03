@@ -32,8 +32,7 @@ Then set the password:
 ```bash
 passwd <username>
 ```
-
-## Option 2: 
+ 
 # 2. Enable SSH
 
 ## 1. Install OpenSSH (if not already installed)
