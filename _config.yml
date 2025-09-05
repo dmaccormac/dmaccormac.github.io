@@ -331,8 +331,8 @@ defaults:
       type: posts
     values:
       layout: single
-      toc: true
-      toc_sticky: # true
+      toc: false
+      toc_sticky:  false
       toc_label: "Contents"
       author_profile: true
       read_time: false
