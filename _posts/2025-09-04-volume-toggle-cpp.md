@@ -2,8 +2,8 @@
 title: How to toggle Windows system volume mute using C++ 
 date: 2025-09-04
 last_modified_at: 2025-09-04
-excerpt: foobar
-tags: In this post, we create a small console application in C++ which toggles the Windows system volume on and off when executed. 
+excerpt: In this post, we create a small console application in C++ which toggles the Windows system volume on and off when executed. 
+tags: 
     - c++
     - windows core audio
 ---
@@ -11,7 +11,7 @@ tags: In this post, we create a small console application in C++ which toggles t
 # Introduction
 I like to have an easy method to toggle the system volume on and off when using a keyboard that doesn't have media control buttons. To achieve this, I found that you can use the Windows Core Audio APIs [[1]](#references). 
 
-In this post, we will create a small console application in C++ which toggles the Windows system volume on and off when executed. As an example usage; I setup keyboard shortcuts in PowerToys [[2]](#references) for such tasks.
+In this post, we will create a small console application in C++ which toggles the Windows system volume on and off when executed. As an example usage; I setup keyboard shortcuts in PowerToys [[2]](#references) to control volume.
 
 
 # Creating the toggleMute() function
@@ -153,7 +153,7 @@ Visual Studio should link these libraries automatically, but here are the steps 
 This ensures linking of the required libaries that interact with Windows COM and audio endpoint APIs.
 
 
-## Using Static Runtime:
+## Using Static Runtime
 Using a static runtime means your application includes the C++ runtime libraries directly in the executable, rather than relying on them being installed on the target system. 
 
 1. In Project Properties > C/C++ > Code Generation > Runtime Library
@@ -164,7 +164,7 @@ This avoids requiring the Visual C++ Redistributable on the target machine. If y
 # Summary
 Windows Core Audio API offers a convenient way to access audio controls from C++. Using a static runtime when building the release ensures that we can redistribute the executable file to wide range of target computers. The result is a small, lightweight application that can be linked to various triggers (e.g a keyboard shorcut) to quickly toggle system volume on and off. 
 
-The complete project code and release executables can be found on the GitHub repo [here](https://github.com/dmaccormac/volctl)
+The complete project code and release executables can be found on the GitHub repo [here](https://github.com/dmaccormac/volctl).
 
 # References
 
