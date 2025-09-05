@@ -224,11 +224,9 @@ $(document).ready(function () {
           return;
         }
         var copyButton = document.createElement("button");
-        // copyButton.title = "Copy to clipboard";
-        copyButton.title = "";
+        copyButton.title = "Copy to clipboard";
         copyButton.className = "clipboard-copy-button";
-        // copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-fw fa-copy"></i><i class="fas fa-fw fa-check copied"></i>';
-        copyButton.innerHTML = '<span class="sr-only"></span><i class="far fa-fw fa-copy"></i><i class="fas fa-fw fa-check copied"></i>';
+        copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-fw fa-copy"></i><i class="fas fa-fw fa-check copied"></i>';
         copyButton.addEventListener("click", copyButtonEventListener);
         container.prepend(copyButton);
       });
